@@ -21,8 +21,8 @@ categories:
 对于页面端：
 ```html
 <template>
-	<div>
-  	<button @click="mainMethod">调用主进程函数按钮</button>
+  <div>
+    <button @click="mainMethod">调用主进程函数按钮</button>
   </div>
 </template>
 
@@ -61,7 +61,7 @@ categories:
 </script>
 
 <style scoped>
-  /* ... */
+/* ... */
 </style>
 ```
 
@@ -75,9 +75,9 @@ import { /* ... */ , ipcMain } from 'electron';
 
 // arg为参数，可以为多个
 ipcMain.on("ElectronMain", async (event, arg) => {
-	// ...执行的内容
-	// 返回的函数，可以添加参数
-	event.reply('ElectronMainResult', 'Feedback!');
+  // ...执行的内容
+  // 返回的函数，可以添加参数
+  event.reply('ElectronMainResult', 'Feedback!');
 });
 ```
 
@@ -93,32 +93,32 @@ ipcMain.on("ElectronMain", async (event, arg) => {
 </template>
 
 <script>
-  // 确保导入了ipcRenderer
-  import { ipcRenderer } from 'electron';
-  export default{
-    beforeDestroy(){
-			ipcRenderer.removeAllListeners('ElectronMainResult');
-    }
-    data(){
-      return {
-        arg: "Hello world!"
-      }
-    }
-    created(){
-      // 对于主进程中的函数返回之后执行本页面中的什么函数
-      ipcRenderer.on('ElectronMainResult', this.mainResult);
-			ipcRenderer.removeAllListeners('ElectronMainResult');
-    },
-    methods:{
-      mainResult(event, arg_back){
-        console.log("完成执行，结果为:" + arg_back);
-      },
-      mainMethod(){
-        // 注意传递的参数
-        ipcRenderer.send('ElectronMain', this.arg);
-      }
-    }
+// 确保导入了ipcRenderer
+import { ipcRenderer } from 'electron';
+export default{
+  beforeDestroy(){
+    ipcRenderer.removeAllListeners('ElectronMainResult');
   }
+  data(){
+    return {
+      arg: "Hello world!"
+    }
+  }
+  created(){
+    // 对于主进程中的函数返回之后执行本页面中的什么函数
+    ipcRenderer.on('ElectronMainResult', this.mainResult);
+    ipcRenderer.removeAllListeners('ElectronMainResult');
+  },
+  methods:{
+    mainResult(event, arg_back){
+      console.log("完成执行，结果为:" + arg_back);
+    },
+    mainMethod(){
+      // 注意传递的参数
+      ipcRenderer.send('ElectronMain', this.arg);
+    }
+  }
+}
 </script>
 
 <style scoped>

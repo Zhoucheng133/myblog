@@ -21,15 +21,15 @@ vue将HTML的思路运用于网页，因此有时候需要将自己写的一个v
 
 ```html
 <template>
-	<div>
-     <button @click="fun">这是按钮</button>
+  <div>
+    <button @click="fun">这是按钮</button>
   </div>
 </template>
 <script>
   export default {
     methods: {
       fun:function(){
-				console.log('Hello world!');
+        console.log('Hello world!');
       }
     }
   }
@@ -40,19 +40,19 @@ vue将HTML的思路运用于网页，因此有时候需要将自己写的一个v
 
 ```html
 <template>
-	<div>
+  <div>
     <childPart></childPart>
   </div>
 </template>
 
 <script>
-  import childPart from '@/components/childPartView.vue';
-  
-  export default {
-		components:{
-        childPart
-    },
-  }
+import childPart from '@/components/childPartView.vue';
+
+export default {
+  components:{
+    childPart
+  },
+}
 </script>
 ```
 
@@ -75,24 +75,24 @@ components:{
 
 ```html
 <template>
-	<div>
+  <div>
     <childPart :msg="variable"></childPart>
   </div>
 </template>
 
 <script>
-  import childPart from '@/components/childPartView.vue';
-  
-  export default {
-		components:{
-        childPart
-    },
-    data(){
-      return{
-        variable: "Hello world!"
-      }
+import childPart from '@/components/childPartView.vue';
+
+export default {
+components:{
+    childPart
+  },
+  data(){
+    return{
+      variable: "Hello world!"
     }
   }
+}
 </script>
 ```
 
@@ -101,8 +101,8 @@ components:{
 
 ```html
 <template>
-	<div>
-     <button>这是按钮</button>
+  <div>
+    <button>这是按钮</button>
   </div>
 </template>
 <script>
@@ -123,52 +123,52 @@ components:{
 父组件：
 ```html
 <template>
-	<div>
+  <div>
     <childPart @emitVariable="getVariable"></childPart>
   </div>
 </template>
 
 <script>
-  import childPart from '@/components/childPartView.vue';
-  
-  export default {
-		components:{
-        childPart
-    },
-    data(){
-      return{
-        Variable: undefined
-      }
-    }
-    methods: {
-      getVariable:function(val){
-        this.Variable=val;
-      }
+import childPart from '@/components/childPartView.vue';
+
+export default {
+  components:{
+    childPart
+  },
+  data(){
+    return{
+      Variable: undefined
     }
   }
+  methods: {
+    getVariable:function(val){
+      this.Variable=val;
+    }
+  }
+}
 </script>
 ```
 
 子组件：
 ```html
 <template>
-	<div>
-     <button @click="go">这是按钮</button>
+  <div>
+    <button @click="go">这是按钮</button>
   </div>
 </template>
 <script>
-  export default {
-    data(){
-      return{
-        msg: "Hello world!"
-      }
+export default {
+  data(){
+    return{
+      msg: "Hello world!"
     }
-    methods: {
-    	go:function(){
-        this.$emit("emitVariable", this.msg)
-      }
-  	}
   }
+  methods: {
+    go:function(){
+      this.$emit("emitVariable", this.msg)
+    }
+  }
+}
 </script>
 ```
 
@@ -180,25 +180,25 @@ components:{
 
 ```html
 <template>
-	<div>
+  <div>
     <childPart ref="childRef"></childPart>
     <button @click="useChildFunction">这是一个按钮</button>
   </div>
 </template>
 
 <script>
-  import childPart from '@/components/childPartView.vue';
-  
-  export default {
-		components:{
-        childPart
-    },
-    methods:{
-      useChildFunction(){
-        this.$refs.childRef.childFunction();
-      }
+import childPart from '@/components/childPartView.vue';
+
+export default {
+  components:{
+    childPart
+  },
+  methods:{
+    useChildFunction(){
+      this.$refs.childRef.childFunction();
     }
   }
+}
 </script>
 ```
 
@@ -206,17 +206,17 @@ components:{
 
 ```html
 <template>
-	<div>
+  <div>
      
   </div>
 </template>
 <script>
   export default {
     methods: {
-    	childFunction(){
+      childFunction(){
         // 子组件的函数
       }
-  	}
+    }
   }
 </script>
 ```

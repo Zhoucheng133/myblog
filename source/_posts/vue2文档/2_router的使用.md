@@ -39,30 +39,30 @@ router主要用来将不同的URL映射到不同的页面，比如说
   ```javascript
   import Vue from 'vue'
   import VueRouter from 'vue-router'
-  
+
   Vue.use(VueRouter)
-  
+
   const routes = [
-      {
-          // 这里是主体内容
-      },
+    {
+      // 这里是主体内容
+    },
   ]
-  
+
   const router = new VueRouter({
-      routes
+    routes
   })
-  
+
   export default router
   ```
 
 - 对于主体文件用法如下：
   ```js
   const routes = [
-      {
-          path: '/',
-          name: 'home',
-          component:() => import('../views/HomeView.vue')
-      },
+    {
+      path: '/',
+      name: 'home',
+      component:() => import('../views/HomeView.vue')
+    },
   ]
   ```
 
@@ -81,8 +81,8 @@ router主要用来将不同的URL映射到不同的页面，比如说
 - 如果要去除URL地址栏中的`#`，可以修改下面的`router`：
   ```js
   const router = new VueRouter({
-  	  mode:'history',		// 增加的内容在这里
-      routes
+    mode:'history',		// 增加的内容在这里
+    routes
   })
   ```
 
@@ -95,9 +95,9 @@ router主要用来将不同的URL映射到不同的页面，比如说
 
   ```html
   <template>
-      <div>
-          <router-view></router-view>
-      </div>
+    <div>
+      <router-view></router-view>
+    </div>
   </template>
   ```
   
@@ -107,7 +107,7 @@ router主要用来将不同的URL映射到不同的页面，比如说
 
 ```javascript
 directLink(url){
-	this.$router.push(url)
+  this.$router.push(url)
 }
 ```
 

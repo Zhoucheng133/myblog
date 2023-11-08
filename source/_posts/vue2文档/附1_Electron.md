@@ -26,28 +26,28 @@ categories:
 
 2. **修改配置**
 
-   在`vue.config.js`文件中修改：
+  在`vue.config.js`文件中修改：
 
-   ```js
-   module.exports = {
-   	pluginOptions: {
-       // 添加这里
-   		electronBuilder: {
-   			nodeIntegration: true,
-         // 对于macOS，分别导出x64版本和Apple Silicon版本
-   			builderOptions: {
-   				artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
-   				mac: {
-   					target: {
-   						arch: ['x64', 'arm64'],
-   						target: 'zip'
-   					}
-   				}
-   			},
-   		},
-   	},
-   }
-   ```
+  ```js
+  module.exports = {
+    pluginOptions: {
+      // 添加这里
+      electronBuilder: {
+        nodeIntegration: true,
+          // 对于macOS，分别导出x64版本和Apple Silicon版本
+        builderOptions: {
+          artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
+          mac: {
+            target: {
+              arch: ['x64', 'arm64'],
+              target: 'zip'
+            }
+          }
+        },
+      },
+    },
+  }
+  ```
 
 ## 设定窗口
 
@@ -100,17 +100,17 @@ categories:
 
   ```html
   <template>
-      <div class="dragArea"></div>
+    <div class="dragArea"></div>
   </template>
   
   <style scoped>
   .dragArea{
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 30px;
-      width: 100%;
-      -webkit-app-region: drag;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    -webkit-app-region: drag;
   }
   </style>
   ```
@@ -130,11 +130,11 @@ categories:
 
 ```js
 win = new BrowserWindow({
-		// 其它代码...
-		webPreferences: {
-			nodeIntegration:true,	// 这里修改为true
-			contextIsolation:false,
-		}
-	})
+// 其它代码...
+webPreferences: {
+	nodeIntegration:true,	// 这里修改为true
+	contextIsolation:false,
+}
+})
 ```
 

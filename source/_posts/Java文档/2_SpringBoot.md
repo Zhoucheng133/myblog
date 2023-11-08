@@ -27,13 +27,13 @@ categories:
 
 ```xml
 <build>
-		<plugins>
-			<plugin>
+  <plugins>
+    <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
-		</plugins>
-	</build>
+  </plugins>
+</build>
 ```
 
 这个依赖可以导出`jar`包，打包的命令如下：

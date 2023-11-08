@@ -28,29 +28,29 @@ categories:
 ```html
 <script>
 export default {
-    data() {
-        return {
-					
-        }
-    },
-    components:{
-        
-    },
-    mounted() {
-
-    },
-    watch: {
-
-    },
-    methods: {
-      
-    },
-  	created: {
-      
-    },
-    props:{
-      
+  data() {
+    return {
+	
     }
+  },
+  components:{
+    
+  },
+  mounted() {
+
+  },
+  watch: {
+
+  },
+  methods: {
+    
+  },
+  created: {
+    
+  },
+  props:{
+    
+  }
 }
 </script>
 ```
@@ -87,7 +87,7 @@ export default {
   ```js
   watch: {
     text: function(newVal,oldVal){
-    	console.log('新的值为',newVal);
+      console.log('新的值为',newVal);
       console.log('旧的值为',oldVal);
     }
   }
@@ -99,7 +99,7 @@ export default {
 
   ```js
   methods: {
-  	add: function(){
+    add: function(){
       this.text+="hello!"
     },
   }
@@ -108,7 +108,7 @@ export default {
   或者也可以这样使用
   ```js
   methods: {
-  	add(){
+    add(){
       this.text+="hello!"
     },
   }

@@ -37,23 +37,23 @@ sudo apt-get install -y nodejs
 
 ### 安装
 
-1. ```bash
-   sudo apt update
-   sudo apt upgrade
-   ```
+```bash
+sudo apt update
+sudo apt upgrade
+ ```
 
-2. ```bash
-   sudo apt install nginx
-   ```
+```bash
+sudo apt install nginx
+```
 
-3. ```bash
-   sudo systemctl start nginx
-   sudo systemctl enable nginx
-   ```
+```bash
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
 
-4. ```bash
-   sudo systemctl status nginx
-   ```
+```bash
+sudo systemctl status nginx
+```
 
 ## 配置文件
 
