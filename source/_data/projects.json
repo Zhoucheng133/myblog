@@ -15,13 +15,13 @@
         "desc":"基于Subsonic的PWA端播放器"
     },
     {
-        "name":"netPlayer PWA",
-        "url":"https://github.com/Zhoucheng133/netPlayer-PWA",
-        "desc":"基于Subsonic的PWA端播放器"
-    },
-    {
         "name":"Virtual Directory",
         "url":"https://github.com/Zhoucheng133/virtual-directory",
         "desc":"局域网文件分享工具"
+    },
+    {
+        "name":"CuteHttpFileServer-GUI",
+        "url":"https://github.com/Zhoucheng133/CuteHttpFileServer-GUI",
+        "desc":"CuteHttpFileServer的图形化界面版本"
     }
 ]
