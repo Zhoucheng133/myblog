@@ -130,11 +130,11 @@ categories:
 
 ```js
 win = new BrowserWindow({
-// 其它代码...
-webPreferences: {
-	nodeIntegration:true,	// 这里修改为true
-	contextIsolation:false,
-}
+  // 其它代码...
+  webPreferences: {
+    nodeIntegration:true,	// 这里修改为true
+    contextIsolation:false,
+  }
 })
 ```
 
