@@ -1,11 +1,12 @@
 ---
-title: Mac常用命令
-date: 2023-11-08 16:10:14
-tags: 
+title: 【命令】Mac命令
+date: 2023-11-08 16:29:18
+tags:
 - 命令
 categories: 
 - 开发
 ---
+
 # Mac常用命令
 
 ## 设置终端代理
@@ -35,3 +36,4 @@ curl cip.cc
   curl 6.ipw.cn
   ```
 
+  

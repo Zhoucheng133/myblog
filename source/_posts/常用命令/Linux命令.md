@@ -1,11 +1,12 @@
 ---
-title: Linux常用命令
-date: 2023-11-08 16:06:51
-tags: 
+title: 【命令】Linux命令
+date: 2023-11-08 16:27:18
+tags:
 - 命令
 categories: 
 - 开发
 ---
+
 # Linux常用命令
 
 ## 查看IP地址
