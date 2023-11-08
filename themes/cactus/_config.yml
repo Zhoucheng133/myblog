@@ -18,6 +18,8 @@ nav:
   about: /about/
   articles: /archives/
   projects: https://github.com/Zhoucheng133
+  tag: /tags/
+  category: /categories/
 
 
 # Links to your social media accounts.
@@ -121,7 +123,7 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+highlight: vs
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
