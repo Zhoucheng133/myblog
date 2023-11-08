@@ -124,3 +124,4 @@ ipcMain.on("ElectronMain", async (event, arg) => {
 <style scoped>
   /* ... */
 </style>
+```
