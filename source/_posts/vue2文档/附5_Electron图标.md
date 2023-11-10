@@ -8,3 +8,23 @@ categories:
 ---
 
 # Electron图标
+
+一般来说这样使用：
+
+```js
+async function createWindow() {
+  // 注意这里添加上这一行来使用path
+  const path = require('path');
+  win = new BrowserWindow({
+    // 其它代码...
+    // 在这里添加:
+    icon: path.join(__dirname, 'path/to/icon.png'),
+    
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
+  })
+  // 其它代码...
+}
+```
