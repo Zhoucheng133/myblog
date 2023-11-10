@@ -94,6 +94,26 @@ app.on('ready', async () => {
 })
 ```
 
-## 常见操作
+## 快捷键
 
-待完成…
+```js
+const template = [
+  // ...
+  {
+    label: 'File',
+    submenu: [
+      {
+        label:"操作",
+        // 绑定快捷键
+        accelerator: 'CmdOrCtrl+Right',
+        click: () => {
+          // 执行的操作
+        }
+      },
+    ]
+  },
+  // ...
+]
+```
+
+关于快捷键的具体字符，[点击这里查看](https://www.electronjs.org/docs/latest/api/accelerator/)
