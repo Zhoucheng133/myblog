@@ -34,7 +34,7 @@ categories:
       // 添加这里
       electronBuilder: {
         nodeIntegration: true,
-          // 对于macOS，分别导出x64版本和Apple Silicon版本
+        // 对于macOS，分别导出x64版本和Apple Silicon版本
         builderOptions: {
           artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
           mac: {
@@ -126,15 +126,17 @@ categories:
 
 ## 使用node组件
 
-如果需要`node`组件，例如`fs`或者`path`等， 需要在`webPreferences`修改设置：
+如果需要`node`组件，例如`fs`或者`path`等， 需要在`vue.config.js`文件中进行配置：
 
 ```js
-win = new BrowserWindow({
-  // 其它代码...
-  webPreferences: {
-    nodeIntegration:true,	// 这里修改为true
-    contextIsolation:false,
-  }
-})
+module.exports = {
+  // ...其它配置
+	pluginOptions: {
+		electronBuilder: {
+      // 在这里配置
+			nodeIntegration: true,
+		},
+	},
+}
 ```
 
