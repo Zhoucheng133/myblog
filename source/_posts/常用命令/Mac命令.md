@@ -36,4 +36,12 @@ curl cip.cc
   curl 6.ipw.cn
   ```
 
-  
+## 设置环境变量
+ 
+ 设置环境变量的文件: `/Users/{用户名}/.zshrc`
+
+ 添加环境变量：
+
+ ```bash
+ export PATH="path/to/your/sdk/bin:$PATH"
+ ```
