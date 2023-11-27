@@ -36,3 +36,11 @@ flutter build windows
 ```bash
 flutter build macos
 ```
+
+## Linux
+
+使用命令生成
+
+```bash
+flutter build linux
+```
