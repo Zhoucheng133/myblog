@@ -23,7 +23,7 @@ flutter pub add flutter_launcher_icons
 
 ## 配置图标
 
-在`yaml`文件中添加下面的代码：
+在`pubspec.yaml`文件中添加下面的代码：
 ```yaml
 flutter_launcher_icons:
   android: "launcher_icon"
