@@ -50,7 +50,8 @@ export default {
   },
   props:{
     
-  }
+  },
+  // ...其它属性
 }
 </script>
 ```
@@ -78,20 +79,12 @@ export default {
 
 - `mounted`
   这一部分用于存储`钩子函数`
-  这一部分的函数自动运行，不需要手动调用
+  详细内容见：`11_钩子函数`章节
 
 - `watch`
   这一部分用于存储`监听变量的函数`
-  使用方法如下（监听`text`变量）：
+  详细内容见：`12_watch`章节
 
-  ```js
-  watch: {
-    text: function(newVal,oldVal){
-      console.log('新的值为',newVal);
-      console.log('旧的值为',oldVal);
-    }
-  }
-  ```
 
 - `methods`
   这一部分用于存储`函数`
