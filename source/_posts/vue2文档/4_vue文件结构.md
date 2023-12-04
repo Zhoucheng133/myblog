@@ -45,7 +45,7 @@ export default {
   methods: {
     
   },
-  created: {
+  created: (){
     
   },
   props:{
