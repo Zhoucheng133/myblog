@@ -105,9 +105,9 @@ export default{
     }
   }
   created(){
+    ipcRenderer.removeAllListeners('ElectronMainResult');
     // 对于主进程中的函数返回之后执行本页面中的什么函数
     ipcRenderer.on('ElectronMainResult', this.mainResult);
-    ipcRenderer.removeAllListeners('ElectronMainResult');
   },
   methods:{
     mainResult(event, arg_back){
