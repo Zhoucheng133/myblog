@@ -15,7 +15,7 @@ categories:
 ipcMain.on("winMin", async (event) => {
   // 注意窗口命名
   win.minimize();
-}),
+})
 ```
 
 ## 最大化
