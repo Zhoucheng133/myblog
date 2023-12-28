@@ -33,7 +33,10 @@ categories:
     pluginOptions: {
       // 添加这里
       electronBuilder: {
+        // 启用node.js的原生库
         nodeIntegration: true,
+        // 如果使用外部依赖库的图标添加下面这行防止生成之后不显示图标
+        customFileProtocol: "./",
         // 对于macOS，分别导出x64版本和Apple Silicon版本
         builderOptions: {
           artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
