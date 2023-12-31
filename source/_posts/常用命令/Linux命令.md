@@ -142,7 +142,7 @@ server{
   
   # 反向代理，当访问到/api时=>
   location /api{
-  	proxy_pass http://127.0.0.1:8080/api
+  	proxy_pass http://127.0.0.1:8080/api;
   }
 }
 ```
