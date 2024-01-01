@@ -37,6 +37,8 @@ categories:
         nodeIntegration: true,
         // 如果使用外部依赖库的图标添加下面这行防止生成之后不显示图标
         customFileProtocol: "./",
+        // 附属文件(文件位于根目录的build文件夹中，这里可以自定义配置)
+        "extraResources": ["./build/**"],
         // 对于macOS，分别导出x64版本和Apple Silicon版本
         builderOptions: {
           artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
