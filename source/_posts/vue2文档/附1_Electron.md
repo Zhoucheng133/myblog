@@ -37,7 +37,9 @@ categories:
         nodeIntegration: true,
         // 如果使用外部依赖库的图标添加下面这行防止生成之后不显示图标
         customFileProtocol: "./",
-        // 附属文件(文件位于根目录的build文件夹中，这里可以自定义配置)
+        // 附属文件
+        // 文件位于根目录的build文件夹中，这里可以自定义配置，需要的时候使用path，例如:
+        // path.join(__dirname, '../build/icon.png')
         "extraResources": ["./build/**"],
         // 对于macOS，分别导出x64版本和Apple Silicon版本
         builderOptions: {
