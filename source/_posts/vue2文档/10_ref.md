@@ -44,3 +44,13 @@ var item=this.$refs.item;
 </script>
 ```
 
+## 滚动
+
+使用ref可以让一个DOM滚动
+
+```js
+this.$refs.Element.scrollTo({
+  top: 100, // 滚动到距离顶部100像素
+  behavior: 'smooth',
+})
+```
