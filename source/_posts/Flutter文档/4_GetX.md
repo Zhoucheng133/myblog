@@ -91,3 +91,36 @@ class myApp extends StatefulWidget{
 }
 ```
 
+### 监听变量
+
+创建的变量如下：
+```dart
+import 'package:get/get.dart';
+class Controller extends GetxController{
+  var paraX="Hello world!".obs;
+}
+```
+
+在StatefulWidget中监听变量
+
+```dart
+import 'package:get/get.dart';
+import 'package:para.dart'
+class myApp extends StatefulWidget{
+  final Controller c = Get.put(Controller());
+
+  @override
+  void initState() {
+    super.initState();
+    // ever([arg],(callback){})
+    ever(c.paraX, (callback) {
+      // 如果发生了更新，会执行这里的函数
+    });
+  }
+
+  @override
+  Widget build(BuildContext context){
+    return //...
+  }
+}
+```
