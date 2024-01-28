@@ -1,5 +1,5 @@
 ---
-title: 【vue2】vue文件结构
+title: 【vue2】vue2文件结构
 date: 2023-11-08 16:42:44
 tags:
 - Vue2

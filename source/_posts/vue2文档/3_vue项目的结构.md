@@ -1,5 +1,5 @@
 ---
-title: 【vue2】vue项目的结构
+title: 【vue2】vue2项目的结构
 date: 2023-11-08 16:42:30
 tags:
 - Vue2

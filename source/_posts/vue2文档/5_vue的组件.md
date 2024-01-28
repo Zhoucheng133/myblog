@@ -1,5 +1,5 @@
 ---
-title: 【vue2】vue的组件
+title: 【vue2】vue2的组件
 date: 2023-11-08 16:43:06
 tags:
 - Vue2
