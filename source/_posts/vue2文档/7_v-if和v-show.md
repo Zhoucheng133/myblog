@@ -1,8 +1,8 @@
 ---
-title: 【Vue】v-if和v-show
+title: 【vue2】v-if和v-show
 date: 2023-11-08 16:43:31
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

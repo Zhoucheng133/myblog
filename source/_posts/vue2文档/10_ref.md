@@ -1,8 +1,8 @@
 ---
-title: 【Vue】ref
+title: 【vue2】ref
 date: 2023-11-08 16:44:16
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

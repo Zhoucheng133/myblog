@@ -1,8 +1,8 @@
 ---
-title: 【Vue】Electron
+title: 【vue2】Electron
 date: 2023-11-08 16:44:28
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

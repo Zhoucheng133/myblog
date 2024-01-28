@@ -1,8 +1,8 @@
 ---
-title: 【Vue】Electron图标
+title: 【vue2】Electron图标
 date: 2023-11-08 16:45:54
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

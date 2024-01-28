@@ -1,8 +1,8 @@
 ---
-title: 【Vue】Electron创建菜单
+title: 【vue2】Electron创建菜单
 date: 2023-11-08 16:44:56
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

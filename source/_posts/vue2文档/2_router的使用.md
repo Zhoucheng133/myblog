@@ -1,8 +1,8 @@
 ---
-title: 【Vue】router的使用
+title: 【vue2】router的使用
 date: 2023-11-08 16:42:15
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

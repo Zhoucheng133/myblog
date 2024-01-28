@@ -1,8 +1,8 @@
 ---
-title: 【Vue】v-bind
+title: 【vue2】v-bind
 date: 2023-11-08 16:43:47
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

@@ -1,8 +1,8 @@
 ---
-title: 【Vue】v-for
+title: 【vue2】v-for
 date: 2023-11-08 16:44:00
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

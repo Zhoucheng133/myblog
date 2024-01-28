@@ -1,8 +1,8 @@
 ---
-title: 【Vue】创建vue项目
+title: 【vue2】创建vue项目
 date: 2023-11-08 16:41:41
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

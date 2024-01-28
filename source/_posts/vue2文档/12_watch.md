@@ -1,8 +1,8 @@
 ---
-title: 【Vue】watch
+title: 【vue2】watch
 date: 2023-12-04 10:17:41
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---

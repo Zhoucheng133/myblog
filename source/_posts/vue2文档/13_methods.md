@@ -1,8 +1,8 @@
 ---
-title: 【Vue】methods
+title: 【vue2】methods
 date: 2023-12-04 10:37:53
 tags:
-- Vue
+- Vue2
 categories: 
 - 开发
 ---
