@@ -99,6 +99,8 @@ export default{
 </script>
 ```
 
+**注意！如果只是修改Object对象的某个参数，那么`oldValue`和`newValue`值是完全一样的**
+
 ## 同时监听两个变量
 
 ```js
