@@ -1,5 +1,5 @@
 ---
-title: 【vue2】v-for
+title: 【Vue2】v-for
 date: 2023-11-08 16:44:00
 tags:
 - Vue2

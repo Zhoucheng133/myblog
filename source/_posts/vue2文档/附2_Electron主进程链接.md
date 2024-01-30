@@ -1,5 +1,5 @@
 ---
-title: 【vue2】Electron主进程链接
+title: 【Vue2】Electron主进程链接
 date: 2023-11-08 16:44:38
 tags:
 - Vue2

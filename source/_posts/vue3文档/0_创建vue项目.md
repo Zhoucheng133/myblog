@@ -1,5 +1,5 @@
 ---
-title: 【vue3】创建vue3项目
+title: 【Vue3】创建vue3项目
 date: 2024-01-28 16:11:15
 tags:
 - Vue3

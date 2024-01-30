@@ -1,5 +1,5 @@
 ---
-title: 【vue2】v-bind
+title: 【Vue2】v-bind
 date: 2023-11-08 16:43:47
 tags:
 - Vue2

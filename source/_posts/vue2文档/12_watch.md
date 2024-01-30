@@ -1,5 +1,5 @@
 ---
-title: 【vue2】watch
+title: 【Vue2】watch
 date: 2023-12-04 10:17:41
 tags:
 - Vue2

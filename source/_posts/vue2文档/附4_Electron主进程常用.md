@@ -1,5 +1,5 @@
 ---
-title: 【vue2】Electron主进程常用
+title: 【Vue2】Electron主进程常用
 date: 2023-11-08 16:45:34
 tags:
 - Vue2

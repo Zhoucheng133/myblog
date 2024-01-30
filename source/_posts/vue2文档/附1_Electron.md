@@ -1,5 +1,5 @@
 ---
-title: 【vue2】Electron
+title: 【Vue2】Electron
 date: 2023-11-08 16:44:28
 tags:
 - Vue2

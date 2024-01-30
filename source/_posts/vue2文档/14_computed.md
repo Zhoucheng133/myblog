@@ -1,5 +1,5 @@
 ---
-title: 【vue2】computed
+title: 【Vue2】computed
 date: 2023-12-21 17:35:53
 tags:
 - Vue2

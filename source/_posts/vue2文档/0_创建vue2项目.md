@@ -1,5 +1,5 @@
 ---
-title: 【vue2】创建vue2项目
+title: 【Vue2】创建vue2项目
 date: 2023-11-08 16:41:41
 tags:
 - Vue2

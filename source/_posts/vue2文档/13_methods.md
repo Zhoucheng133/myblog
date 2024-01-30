@@ -1,5 +1,5 @@
 ---
-title: 【vue2】methods
+title: 【Vue2】methods
 date: 2023-12-04 10:37:53
 tags:
 - Vue2

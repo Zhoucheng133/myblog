@@ -1,5 +1,5 @@
 ---
-title: 【vue2】v-if和v-show
+title: 【Vue2】v-if和v-show
 date: 2023-11-08 16:43:31
 tags:
 - Vue2
