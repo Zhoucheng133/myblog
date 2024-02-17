@@ -72,3 +72,25 @@ return Container(
 );
 ```
 
+## 需要过渡动画的Container
+
+
+可以使用`AnimatedContainer`代替`Container`实现有过渡动画的`Container`
+
+
+例如颜色的过渡变化
+```dart
+
+// 将Color作为属性传入AnimatedContainer
+Color containerColor=Colors.red;
+
+return AnimatedContainer{
+  // 注意，必要的属性Duration，标识变换过渡时间
+  duration: const Duration(milliseconds: 200)
+  width: 100,
+  height: 100,
+  color: containerColor,
+}
+```
+
+这样当修改`containerColor`这个变量的时候，`Container`就可以实现颜色过渡效果
