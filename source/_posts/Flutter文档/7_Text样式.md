@@ -47,6 +47,25 @@ return Text(
 
 注意：由于默认字体无法完全支持中文的所有字体粗细，因此在默认情况下设置`fontWeight`可能对中文无效，如果要对中文使用，下一节`修改字体`
 
+## 字体动画
+
+一般用于改变字体的颜色等参数的过渡动画
+
+```dart
+// 使用AnimatedDefaultTextStyle代替Text
+AnimatedDefaultTextStyle(
+  duration: Duration(milliseconds: 200),
+  style: TextStyle(
+    fontSize: 14,
+    // 注意，active是一个可变参数，通过setState改变参数，colorA和colorB是固定的颜色参数
+    color: active ? colorA : colorB ,
+  ),
+  child: Text(
+    "文本显示在这里",
+  ),
+),
+```
+
 ## 修改字体
 
 ### 获取字体
