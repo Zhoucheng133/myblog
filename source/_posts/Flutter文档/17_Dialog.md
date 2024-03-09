@@ -22,7 +22,7 @@ void dialogFunction(BuildContext context){
   showDialog(
     context: context,
     // 其它内容...
-  )
+  );
 }
 ```
 
