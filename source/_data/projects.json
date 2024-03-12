@@ -1,27 +1,42 @@
 [
-    {
-       "name":"netPlayer",
-       "url":"https://github.com/Zhoucheng133/net-player",
-       "desc":"基于Subsonic的桌面端音乐播放器"
-    },
-    {
-        "name":"netPlayer Mobile",
-        "url":"https://github.com/Zhoucheng133/netPlayer-Mobile",
-        "desc":"基于Subsonic的移动端音乐播放器"
-    },
-    {
-        "name":"netPlayer PWA",
-        "url":"https://github.com/Zhoucheng133/netPlayer-PWA",
-        "desc":"基于Subsonic的PWA端播放器"
-    },
-    {
-        "name":"Virtual Directory",
-        "url":"https://github.com/Zhoucheng133/virtual-directory",
-        "desc":"局域网文件分享工具"
-    },
-    {
-        "name":"CuteHttpFileServer-GUI",
-        "url":"https://github.com/Zhoucheng133/CuteHttpFileServer-GUI",
-        "desc":"CuteHttpFileServer的图形化界面版本"
-    }
+  {
+    "name": "netPlayer",
+    "url": "https://github.com/Zhoucheng133/net-player",
+    "desc": "基于Subsonic的桌面端音乐播放器"
+  },
+  {
+    "name": "netPlayer Mobile",
+    "url": "https://github.com/Zhoucheng133/netPlayer-Mobile",
+    "desc": "基于Subsonic的移动端音乐播放器"
+  },
+  {
+    "name": "netPlayer Next",
+    "url": "https://github.com/Zhoucheng133/netPlayer-Next",
+    "desc": "netPlayer的桌面端Flutter重制版"
+  },
+  {
+    "name": "netPlayer PWA",
+    "url": "https://github.com/Zhoucheng133/netPlayer-PWA",
+    "desc": "基于Subsonic的PWA端播放器"
+  },
+  {
+    "name": "Virtual Directory",
+    "url": "https://github.com/Zhoucheng133/virtual-directory",
+    "desc": "局域网文件分享工具"
+  },
+  {
+    "name": "CuteHttpFileServer-GUI",
+    "url": "https://github.com/Zhoucheng133/CuteHttpFileServer-GUI",
+    "desc": "CuteHttpFileServer的图形化界面版本"
+  },
+  {
+    "name": "pyftp-GUI",
+    "url": "https://github.com/Zhoucheng133/pyftp-GUI",
+    "desc": "pyftp的图形化界面版本"
+  },
+  {
+    "name": "Anime-Update-Panel",
+    "url": "https://github.com/Zhoucheng133/Anime-Update-Panel",
+    "desc": "番剧更新时刻表工具"
+  }
 ]
