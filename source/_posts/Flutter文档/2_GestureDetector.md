@@ -30,6 +30,17 @@ return GestureDetector(
 );
 ```
 
+## 右键操作
+
+```dart
+return GestureDetector(
+  onSecondaryTap: (){
+    // 右键操作
+  },
+  child: // 其它Widget
+)
+```
+
 ## 滑动操作
 
 ```dart
