@@ -72,6 +72,38 @@ return Container(
 );
 ```
 
+## 边框
+```dart
+return Container(
+  decoration: BoxDecoration{
+    // 全部的边框红色，宽度为1
+    border: Border.all(
+      color: Colors.red,
+      width: 1.0,
+    ),
+  }
+)
+```
+
+也可以这样使用：
+
+```dart
+Container(
+  border: Border(
+    // 顶部边框
+    top: BorderSide(
+      color: Colors.red,
+      width: 1.0,
+    ),
+    // 底部边框
+    bottom: BorderSide(
+      color: Colors.blue,
+      width: 1.0,
+    ),
+  ),
+)
+```
+
 ## 需要过渡动画的Container
 
 
