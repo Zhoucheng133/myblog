@@ -16,7 +16,7 @@ return MouseRegion(
   // 当鼠标移动到这里的时候使用"SystemMouseCursors.click"这个样式
   cursor: SystemMouseCursors.click,
   child: // ...
-)
+);
 ```
 
 ## 悬浮操作
@@ -31,7 +31,7 @@ return MouseRegion(
     // 鼠标离开的操作
   },
   child: // ...
-)
+);
 ```
 
 ## 通过悬浮改变样式
@@ -57,6 +57,6 @@ return MouseRegion(
     // 通过hover这个参数判断需要将AnimatedContainer设定为什么颜色
     color: hover==true ? Colors.grey : Colors.white,
   )
-)
+);
 ```
 

@@ -18,7 +18,7 @@ return Text(
     // 在这里修改颜色
     color: Colors.red,
   )
-)
+);
 ```
 
 ## 字体大小
@@ -30,7 +30,7 @@ return Text(
     // 在这里修改字体大小
     fontSize: 14,
   )
-)
+);
 ```
 
 ## 字体粗细
@@ -42,7 +42,7 @@ return Text(
     // 在这里修改字体粗细
     fontWeight: FontWeight.bold,
   )
-)
+);
 ```
 
 注意：由于默认字体无法完全支持中文的所有字体粗细，因此在默认情况下设置`fontWeight`可能对中文无效，如果要对中文使用，下一节`修改字体`

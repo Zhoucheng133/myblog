@@ -73,7 +73,7 @@ return Scaffold(
     backgroundColor: Colors.white, // 背景颜色
     foregroundColor: Colors.blue, // 前景色
   ),
-)
+);
 ```
 
 ### BottomNavigationBar
@@ -91,7 +91,7 @@ return Scaffold(
     selectedItemColor: Colors.blue, // 选中的颜色
     unselectedItemColor: Colors.grey, // 没有选中的颜色
   ),
-)
+);
 ```
 
 #### items
@@ -120,7 +120,7 @@ return Scaffold(
     foregroundColor: Colors.blue, // 前景色
     backgroundColor: Colors.white, // 背景颜色
   ),
-)
+);
 ```
 
 ## 一些问题
@@ -132,5 +132,5 @@ return Scaffold(
   // 添加下面这行
   resizeToAvoidBottomInset: false,
   // ...
-)
+);
 ```

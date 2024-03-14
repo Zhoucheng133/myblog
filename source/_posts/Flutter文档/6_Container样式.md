@@ -82,7 +82,7 @@ return Container(
       width: 1.0,
     ),
   }
-)
+);
 ```
 
 也可以这样使用：
@@ -101,7 +101,7 @@ Container(
       width: 1.0,
     ),
   ),
-)
+);
 ```
 
 ## 需要过渡动画的Container
@@ -116,13 +116,13 @@ Container(
 // 将Color作为属性传入AnimatedContainer
 Color containerColor=Colors.red;
 
-return AnimatedContainer{
+return AnimatedContainer(
   // 注意，必要的属性Duration，标识变换过渡时间
   duration: const Duration(milliseconds: 200)
   width: 100,
   height: 100,
   color: containerColor,
-}
+);
 ```
 
 这样当修改`containerColor`这个变量的时候，`Container`就可以实现颜色过渡效果
