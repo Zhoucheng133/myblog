@@ -124,3 +124,36 @@ class myApp extends StatefulWidget{
   }
 }
 ```
+
+**⚠️注意，如果这个Widget可能会被销毁，务必在销毁的同时销毁监听**
+
+```dart
+import 'package:get/get.dart';
+import 'package:para.dart'
+class myApp extends StatefulWidget{
+  final Controller c = Get.put(Controller());
+
+  // 注意变量类型
+  late Worker listener;
+
+  @override
+  void initState() {
+    super.initState();
+    listener = ever(c.paraX, (callback) {
+      // 监听函数
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    // 注意销毁监听
+    listener.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context){
+    return //...
+  }
+}
+```
