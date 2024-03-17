@@ -42,6 +42,28 @@ return Container{
 };
 ```
 
+## 渐变色
+
+```dart
+retrun Container(
+  decoration: BoxDecoration{
+    gradient: LinearGradient(
+      // 开始的位置
+      begin: Alignment.topLeft,
+      // 结束为止
+      end: Alignment.bottomRight,
+      // 关键点
+      stops: [0.0, 1.0],
+      // 颜色
+      colors: [Colors.red, Color.fromARGB(255, 255, 154, 147)]
+    )
+    // 其它代码
+  }
+)
+```
+
+注意，颜色的数量和关键点的数量要相同，即`stops.length == colors.length`
+
 ## 阴影
 
 ```dart
