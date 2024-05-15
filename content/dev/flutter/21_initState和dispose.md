@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 21
 ---
 
 # initState和dispose

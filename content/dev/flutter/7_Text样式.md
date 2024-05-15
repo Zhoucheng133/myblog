@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 7
 ---
 
 # Text样式
