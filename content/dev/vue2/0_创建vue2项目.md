@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 0
 ---
 
 # 创建vue项目

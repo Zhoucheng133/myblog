@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 8
 ---
 
 # v-bind

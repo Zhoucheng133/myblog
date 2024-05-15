@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 9
 ---
 
 # v-for

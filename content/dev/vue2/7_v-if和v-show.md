@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 7
 ---
 
 # v-if和v-show
