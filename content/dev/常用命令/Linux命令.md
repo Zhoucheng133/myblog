@@ -1,9 +1,7 @@
 ---
 type: docs
-next: dev/常用命令/Mac命令
+title: Linux常用命令
 ---
-
-# Linux常用命令
 
 ## 查看IP地址
 
