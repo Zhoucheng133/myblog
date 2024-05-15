@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 12
 ---
 
 # Pinia

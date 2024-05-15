@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 0
 ---
 
 # 创建Vue3项目
