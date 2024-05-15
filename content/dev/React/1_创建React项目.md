@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 创建React项目
 weight: 1
 ---
 
-# 创建React项目
 
 1. 安装`node.js`  
    注意：不要使用`node.js`18以下的版本，无法创建React项目

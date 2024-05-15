@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Text样式
 weight: 7
 ---
 
-# Text样式
 
 ## 颜色
 

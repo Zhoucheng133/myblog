@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 嵌套Widget
 weight: 18
 ---
 
-# 嵌套Widget
 
 方便随时调用，可以在一个Widget中调用另外一个Widget
 

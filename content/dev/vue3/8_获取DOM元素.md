@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 获取DOM元素
 weight: 8
 ---
 
-# 获取DOM元素
 
 ```html
 <template>

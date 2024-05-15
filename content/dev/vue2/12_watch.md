@@ -1,9 +1,9 @@
 ---
 type: docs
+title: watch
 weight: 12
 ---
 
-# watch
 
 watch一般用于监听一个变量的变化执行的函数
 

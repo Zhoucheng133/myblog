@@ -1,9 +1,9 @@
 ---
 type: docs
+title: ref
 weight: 10
 ---
 
-# ref
 
 ## ref作用
 

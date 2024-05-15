@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 发布App
 weight: 12
 ---
 
-# 发布App
 
 ## iOS
 

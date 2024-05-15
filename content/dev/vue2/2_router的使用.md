@@ -1,9 +1,9 @@
 ---
 type: docs
+title: router的使用
 weight: 2
 ---
 
-# router的使用
 
 ## router的作用
 

@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 创建vue2项目
 weight: -1
 ---
 
-# 创建vue项目
 
 1. 安装node.js
 

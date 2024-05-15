@@ -1,9 +1,9 @@
 ---
 type: docs
+title: v-if和v-show
 weight: 7
 ---
 
-# v-if和v-show
 
 ## 用途
 

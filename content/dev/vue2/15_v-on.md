@@ -1,9 +1,9 @@
 ---
 type: docs
+title: v-on
 weight: 15
 ---
 
-# v-on
 
 `v-on`，简单来说就是事件处理，可以用`@`代替，比如`v-on:click`等同于`@click
 

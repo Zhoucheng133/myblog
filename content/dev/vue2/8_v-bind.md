@@ -1,9 +1,9 @@
 ---
 type: docs
+title: v-bind
 weight: 8
 ---
 
-# v-bind
 
 ## 简写
 

@@ -1,9 +1,9 @@
 ---
 type: docs
+title: v-for
 weight: 9
 ---
 
-# v-for
 
 ## 作用
 

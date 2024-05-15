@@ -1,9 +1,9 @@
 ---
 type: docs
+title: SpringBoot
 weight: 2
 ---
 
-# SpringBoot
 
 ## 创建一个SpringBoot项目
 

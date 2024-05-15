@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 获取DOM元素
 weight: 10
 ---
 
-# 获取DOM元素
 
 ```js
 import { useRef } from "react";

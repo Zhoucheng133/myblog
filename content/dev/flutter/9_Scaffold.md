@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Scaffold
 weight: 9
 ---
 
-# Scaffold
 
 **注意对于移动端而言需要设置Scaffold一些内容，对于桌面端而言可以选择性使用**
 

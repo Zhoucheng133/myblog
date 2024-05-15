@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 自定义Hook
 weight: 12
 ---
 
-# 自定义Hook
 
 类似于Vue3的组合式函数，可以用于存储可以重复使用的方法
 

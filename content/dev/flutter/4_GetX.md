@@ -1,9 +1,9 @@
 ---
 type: docs
+title: GetX
 weight: 4
 ---
 
-# GetX
 
 GetX是一个在`Flutter`创建全局变量的库
 

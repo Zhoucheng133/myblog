@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Container样式
 weight: 6
 ---
 
-# Container样式
 
 ## 颜色
 

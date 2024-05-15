@@ -1,9 +1,9 @@
 ---
 type: docs
+title: MouseRegion
 weight: 11
 ---
 
-# MouseRegion
 
 ## 修改鼠标样式
 

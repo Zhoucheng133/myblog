@@ -1,9 +1,9 @@
 ---
 type: docs
+title: GestureDetector
 weight: 2
 ---
 
-# GestureDetector
 
 使用`Container`作为一个按钮
 

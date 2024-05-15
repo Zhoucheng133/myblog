@@ -1,9 +1,9 @@
 ---
 type: docs
+title: initState和dispose
 weight: 21
 ---
 
-# initState和dispose
 
 ## initState
 

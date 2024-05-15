@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Hooks
 weight: 11
 ---
 
-# Hooks
 
 可以使用外部的TypeScript或者JavaScript
 

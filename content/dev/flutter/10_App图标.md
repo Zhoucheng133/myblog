@@ -1,9 +1,9 @@
 ---
 type: docs
+title: App图标
 weight: 10
 ---
 
-# App图标
 
 ## Flutter launcher icons
 

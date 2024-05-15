@@ -1,9 +1,9 @@
 ---
 type: docs
+title: pinia
 weight: 12
 ---
 
-# Pinia
 
 ## 与Hook区别
 

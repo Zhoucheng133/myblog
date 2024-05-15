@@ -1,9 +1,9 @@
 ---
 type: docs
+title: useEffect
 weight: 11
 ---
 
-# useEffect
 
 useEffect( 回调函数, 依赖项 )
 

@@ -1,9 +1,9 @@
 ---
 type: docs
+title: computed
 weight: 14
 ---
 
-# computed
 
 ## 和`methods`区别
 

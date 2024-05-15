@@ -1,9 +1,9 @@
 ---
 type: docs
+title: day.js依赖
 weight: 6
 ---
 
-# day.js依赖
 
 day.js的官方文档[在这里](https://dayjs.gitee.io/docs/zh-CN/installation/installation)
 

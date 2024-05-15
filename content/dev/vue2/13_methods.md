@@ -1,9 +1,9 @@
 ---
 type: docs
+title: methods
 weight: 13
 ---
 
-# methods
 
 用于存放各种函数方法
 

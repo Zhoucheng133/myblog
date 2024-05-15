@@ -1,9 +1,9 @@
 ---
 type: docs
+title: useState
 weight: 8
 ---
 
-# useState
 
 `useState`是一个状态变量，和Vue3中的`ref`类似，React默认创建的变量都是非状态的变量（也就是变量更新之后在页面上不会更新）
 

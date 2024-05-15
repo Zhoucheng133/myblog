@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Dialog
 weight: 17
 ---
 
-# Dialog
 
 注意，本文使用的是Flutter原生的Material风格Dialog和iOS风格的Dialog
 

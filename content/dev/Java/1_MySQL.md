@@ -1,9 +1,9 @@
 ---
 type: docs
+title: MySQL
 weight: 1
 ---
 
-# MySQL
 
 ## 导入库
 
