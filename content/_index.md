@@ -1,17 +1,10 @@
 ---
-title: My Site
+title: 主页
 toc: false
 ---
 
-This is the landing page.
-
-## Explore
-
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
+  {{< card link="dev" title="开发文档" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
+  {{< card link="docs" title="About" icon="github" >}}
 {{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
