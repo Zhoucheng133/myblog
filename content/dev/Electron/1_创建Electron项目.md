@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 1
 ---
 
 # 创建Electron项目

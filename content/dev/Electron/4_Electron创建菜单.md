@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 4
 ---
 
 # Electron创建菜单

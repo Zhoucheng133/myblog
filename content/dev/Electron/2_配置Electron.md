@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 2
 ---
 
 # 配置Electron
