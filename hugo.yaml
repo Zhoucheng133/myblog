@@ -25,8 +25,8 @@ markup:
 
 menu:
   main:
-    - name: 文档
-      pageRef: /docs
+    - name: 开发文档
+      pageRef: /dev
       weight: 1
     - name: 关于
       pageRef: /about
