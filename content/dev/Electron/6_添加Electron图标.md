@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 添加Electron图标
 weight: 6
 ---
 
-# Electron图标
 
 对于`Vue2`中使用Electron
 

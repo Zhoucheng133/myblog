@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Electron创建菜单
 weight: 4
 ---
 
-# Electron创建菜单
 
 ## 创建菜单函数
 

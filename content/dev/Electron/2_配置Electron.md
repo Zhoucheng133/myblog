@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 配置Electron
 weight: 2
 ---
 
-# 配置Electron
 
 ## 窗口配置
 

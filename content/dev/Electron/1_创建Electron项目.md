@@ -1,9 +1,9 @@
 ---
 type: docs
+title: 创建Electron项目
 weight: 1
 ---
 
-# 创建Electron项目
 
 ## 对于使用`React`和`Vue3`
 
