@@ -41,9 +41,9 @@ menu:
       url: "https://github.com/Zhoucheng133"
       params:
         icon: github
-    - name: B站
-      url: "https://space.bilibili.com/5129395"
-      params:
+    # - name: B站
+    #   url: "https://space.bilibili.com/5129395"
+    #   params:
 
 params:
   navbar:
