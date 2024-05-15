@@ -23,4 +23,4 @@ def add_content_to_md_files(directory):
 
 
 # 调用函数并传入目录路径
-add_content_to_md_files("content/dev/vue2")
+add_content_to_md_files("content/dev/vue3")
