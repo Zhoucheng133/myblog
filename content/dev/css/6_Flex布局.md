@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Flex布局
 weight: 6
 ---
 
-# Flex布局
 
 ## 水平Flex
 

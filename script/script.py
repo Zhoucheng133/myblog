@@ -12,15 +12,20 @@ def add_content_to_md_files(directory):
                 with open(file_path, 'r+', encoding='utf-8') as file:
                     # content = file.read()
                     # a=content.split('\n')
-                    parts = file_name.split('_')[0]
+                    parts = file_name.split('_')[1]
+                    parts = parts.split('.md')[0]
                     # a.insert(2, "weight: "+parts+"\n")
                     # file.write(content)
                     lines=file.readlines()
-                    lines.insert(2, "weight: "+parts+"\n")
+                    for idx, line in enumerate(lines):
+                        if line.strip().startswith('#'):
+                            del lines[idx]
+                            break
+                    lines.insert(2, "title: "+parts+"\n")
                     file.seek(0)
                     file.writelines(lines)
                     file.truncate()
 
 
 # 调用函数并传入目录路径
-add_content_to_md_files("content/dev/vue3")
+add_content_to_md_files("content/dev/css")

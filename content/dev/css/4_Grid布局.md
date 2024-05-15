@@ -1,9 +1,9 @@
 ---
 type: docs
+title: Grid布局
 weight: 4
 ---
 
-# Grid布局
 
 ## 一般网格
 
