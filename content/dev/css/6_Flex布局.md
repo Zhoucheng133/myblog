@@ -1,5 +1,6 @@
 ---
 type: docs
+weight: 6
 ---
 
 # Flex布局

@@ -10,13 +10,17 @@ def add_content_to_md_files(directory):
                 file_path = os.path.join(root, file_name)
                 # 打开文件并添加内容
                 with open(file_path, 'r+', encoding='utf-8') as file:
-                    content = file.read()
-                    file.seek(2, 0)
-                    file.write("---\n")
-                    file.write("type: docs\n")
-                    file.write("---\n")
-                    file.write("\n")
-                    file.write(content)
+                    # content = file.read()
+                    # a=content.split('\n')
+                    parts = file_name.split('_')[0]
+                    # a.insert(2, "weight: "+parts+"\n")
+                    # file.write(content)
+                    lines=file.readlines()
+                    lines.insert(2, "weight: "+parts+"\n")
+                    file.seek(0)
+                    file.writelines(lines)
+                    file.truncate()
+
 
 # 调用函数并传入目录路径
-add_content_to_md_files("C:\Develop\myblog\content\dev\css")
+add_content_to_md_files("C:\Develop\myblog\content\dev\Electron")
