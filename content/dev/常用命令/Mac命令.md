@@ -1,6 +1,7 @@
 ---
 type: docs
 title: Mac常用命令
+weight: 2
 ---
 
 ## 设置终端代理

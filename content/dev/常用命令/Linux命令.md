@@ -1,6 +1,7 @@
 ---
 type: docs
 title: Linux常用命令
+weight: 1
 ---
 
 ## 查看IP地址
