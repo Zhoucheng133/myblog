@@ -5,5 +5,5 @@ sidebar:
   open: false
 ---
 
-- [MySQL](/dev/java/1_mysql)
-- [SpringBoot](/dev/java/2_springboot)
+- [MySQL](1_mysql)
+- [SpringBoot](2_springboot)
