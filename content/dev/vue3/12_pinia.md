@@ -95,6 +95,7 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 export default defineStore("main", ()=>{
   let count=ref(0);
+  return { count };
 })
 ```
 
