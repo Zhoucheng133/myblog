@@ -72,7 +72,7 @@ flutter pub add google_fonts
 ```dart
 return MaterialApp(
   theme: ThemeData(
-    // 简体中
+    // 简体中文
     textTheme: GoogleFonts.notoSansScTextTheme(),
   ),
 )
