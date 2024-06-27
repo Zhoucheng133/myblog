@@ -62,7 +62,23 @@ AnimatedDefaultTextStyle(
 ),
 ```
 
-## 修改字体
+## 使用Google提供的字体
+
+安装google_fonts:
+```bash
+flutter pub add google_fonts
+```
+设置为默认字体
+```dart
+return MaterialApp(
+  theme: ThemeData(
+    // 简体中
+    textTheme: GoogleFonts.notoSansScTextTheme(),
+  ),
+)
+```
+
+## 使用本地字体
 
 ### 获取字体
 
