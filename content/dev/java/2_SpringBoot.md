@@ -16,6 +16,7 @@ weight: 2
 - SpringBoot DevTools：开发者工具
 - LomBok：转发Java中的类参数（传递到前端以对象的形式）
 - Spring Web：可以使用注解`@RequestMapping`
+- Thymeleaf：如果你需要使用静态页面
 
 ### 为打包做准备
 
@@ -167,3 +168,29 @@ String upload(@RequestParam("file") MultipartFile file) throws IOException{
 }
 ```
 
+### 静态页面
+你需要在创建项目的时候添加thymeleaf依赖
+
+注意，如果你使用了多个页面或者路由，建议使用nginx部署而不是在SpringBoot中
+
+将`index.html`放在`templates`文件夹下  
+其他静态文件放在`static`文件夹下
+
+```java
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+
+    @GetMapping("/")
+    public String index(Model model) {
+        model.addAttribute("name", "Thymeleaf");
+        return "index";
+    }
+}
+
+```
