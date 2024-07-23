@@ -45,7 +45,7 @@ return Text(
 
 ## 字体动画
 
-一般用于改变字体的颜色等参数的过渡动画
+### 用于改变字体的颜色等参数的过渡动画
 
 ```dart
 // 使用AnimatedDefaultTextStyle代替Text
@@ -59,6 +59,22 @@ AnimatedDefaultTextStyle(
   child: Text(
     "文本显示在这里",
   ),
+),
+```
+
+### 改变文本内容的过渡动画（一般是淡入淡出动画）
+
+```dart
+AnimatedSwitcher(
+  duration: const Duration(milliseconds: 200),
+  child: active ? Text(
+    // 务必注意添加key值来告诉AnimatedSwitcher组件发生变化
+    key: const ValueKey<int>(0),
+    'ABC',
+  ) : Text(
+    key: const ValueKey<int>(1),
+    'DEF'
+  )
 ),
 ```
 
