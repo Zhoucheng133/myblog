@@ -14,8 +14,10 @@ type: about
 **这些是我开发的一些小工具，欢迎试用😊**
 
 - [netPlayer](https://github.com/Zhoucheng133/netPlayer-Next) Subsonic音乐库客户端
+  - [LiveBG](https://github.com/Zhoucheng133/Live-BG) 适用于netPlayer的直播背景
 - [netPlayer Mobile](https://github.com/Zhoucheng133/netPlayer-Mobile) netPlayer的移动端版本
 - [pyFTP GUI](https://github.com/Zhoucheng133/pyftp-GUI) pyftpdlib的GUI图形化程序
 - [Virtual Directory](https://github.com/Zhoucheng133/virtual-directory) 文件分享工具
 - [Anime Update Panel](https://github.com/Zhoucheng133/Anime-Update-Panel) 番剧更新助手
 - [Mikan Helper](https://github.com/Zhoucheng133/Mikan-Helper) Mikan番剧自动下载工具
+- [AriaUI](https://github.com/Zhoucheng133/AriaUI) Aria2的图形化桌面程序
