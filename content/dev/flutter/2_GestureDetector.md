@@ -92,7 +92,7 @@ return GestureDetector(
     // 按下的操作
   },
   child: Container(
-    color: Colors.white,	// 添加颜色
+    color: Colors.transparent,	// 添加颜色或者这样使用透明颜色
     child: Text("按钮")
   )
 );

@@ -1,7 +1,7 @@
 ---
 type: docs
 title: Grid布局
-weight: 4
+weight: 3
 ---
 
 
@@ -28,7 +28,7 @@ weight: 4
 
   然后我们需要添加`grid`的属性：
 
-  ~~grid-gap~~（已弃用）或者`gap`：格子之间的间距，默认为0
+  ~~`grid-gap`~~（已弃用）或者`gap`：格子之间的间距，默认为0
 
   `grid-template-columns`：水平方向需要分成多少列
 

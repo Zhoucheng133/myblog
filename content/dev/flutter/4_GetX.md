@@ -5,7 +5,7 @@ weight: 4
 ---
 
 
-GetX是一个在`Flutter`创建全局变量的库
+GetX是在`Flutter`中创建全局变量/自定义路由/多语言支持等功能的一个依赖
 
 ## 安装
 
@@ -64,6 +64,7 @@ class myApp extends StatefulWidget{
   }
 }
 ```
+**⚠️注意，如果Obx(()=>)中不包含任何GetX变量会报错**
 
 ### 函数中更新
 
@@ -153,3 +154,25 @@ class myApp extends StatefulWidget{
   }
 }
 ```
+
+## 跳转路由
+
+GetX可以快捷地跳转到某个路由
+
+你需要先修改`MaterialApp`为`GetMaterialApp`
+
+```dart
+return GetMaterialApp(
+  home: // 页面内容
+)
+```
+
+这样跳转路由
+
+```dart
+Get.to(()=>newPage());
+```
+
+## 多语言
+
+待补充

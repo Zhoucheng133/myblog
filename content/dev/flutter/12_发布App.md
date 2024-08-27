@@ -17,6 +17,11 @@ weight: 12
    ```bash
    flutter build apk --split-per-abi
    ```
+   若要支持所有的架构:
+   ```bash
+   flutter build apk
+   # 这样生成的apk可能会大一些
+   ```
 ## Windows
 
 通过命令生成: 

@@ -32,6 +32,27 @@ CMD <执行程序的命令>
 
 注意，如果你需要用到时间，Docker虚拟机的默认时间显示的UTF+0的时间，你可以通过下面的命令自定义时区：
 ```dockerfile
-RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-&& echo 'Asia/Shanghai' >/etc/timezone \
+ENV TZ=Asia/Shanghai
+```
+
+## 示例：
+
+这是一个部署node.js服务器的dockerfile
+
+```dockerfile
+FROM node:18.20.4
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm config set registry https://registry.npmmirror.com
+RUN npm install
+RUN npm install pm2 -g
+
+ENV TZ=Asia/Shanghai
+
+EXPOSE 8811
+
+CMD ["pm2-runtime", "main.js"]
 ```
