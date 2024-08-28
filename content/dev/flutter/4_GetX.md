@@ -175,4 +175,66 @@ Get.to(()=>newPage());
 
 ## 多语言
 
-待补充
+首先需要创建语言的`Map`，例如这样
+```dart
+// lang/zh_cn.dart
+const Map<String, String> zhCN = {
+  'home': '主页',
+  'settings': '设置'
+  // 其它内容
+};
+```
+
+```dart
+// lang/en_us.dart
+const Map<String, String> enUS = {
+  'home': 'Home',
+  'settings': 'Settings'
+  // 其它内容
+};
+```
+
+在`main.dart`中定义它
+
+```dart
+class MainTranslations extends Translations {
+  @override
+  Map<String, Map<String, String>> get keys => {
+    'en_US': enUS,
+    'zh_CN': zhCN,
+  };
+}
+```
+
+在`GetMaterialApp`中使用它
+
+```dart
+return GetMaterialApp(
+  translations: MainTranslations(),   // 在这里调用
+  localizationsDelegates: const [
+    GlobalMaterialLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate
+  ],
+  locale: const Locale('zh', 'CN'),   // 默认语言
+  supportedLocales: const [
+    Locale('en', 'US'),
+    Locale('zh', 'CN'),
+  ],
+)
+```
+
+在Widget中使用翻译
+
+```dart
+return Text(
+  'home'.tr
+)
+```
+
+更新语言
+
+```dart
+var locale=Locale('en', 'US');
+Get.updateLocale(locale);
+```
