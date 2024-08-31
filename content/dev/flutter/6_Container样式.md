@@ -122,6 +122,18 @@ Container(
 );
 ```
 
+## 包含一个图片的Container
+
+```dart
+return Container(
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: const AssetImage("assets/image.jpg")
+    )
+  )
+);
+```
+
 ## 需要过渡动画的Container
 
 
