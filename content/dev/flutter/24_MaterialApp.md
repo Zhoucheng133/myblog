@@ -22,6 +22,7 @@ return MaterialApp(
   ),
   home: const Scaffold(
     // 页面内容...
+    // Scaffold见9: Scaffold
   ),
 );
 ```

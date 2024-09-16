@@ -156,3 +156,26 @@ return AnimatedContainer(
 ```
 
 这样当修改`containerColor`这个变量的时候，`Container`就可以实现颜色过渡效果
+
+## 点击水波纹效果
+
+```dart
+// 注意，外层不要使用纯色的内容
+return Ink(
+  decoration: BoxDecoration(
+    color: /** 背景颜色（如果需要） */,
+    borderRadius: /** 圆角（如果需要） */,
+  ),
+  child: InkWell(
+    onTap: (){
+      // 点击操作
+    },
+    child: Container(
+      // 注意，Container的样式在Ink的decoration中
+      height: /** 高度（如果需要） */,
+      width: /** 宽度（如果需要） */,
+      child: // Container内容
+    )
+  )
+);
+```
