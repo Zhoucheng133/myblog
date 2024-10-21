@@ -28,7 +28,7 @@ menu:
     - name: 视频/动画制作文档
       pageRef: /media
       weight: 2
-    - name: 关于
+    - name: 关于我
       pageRef: /about
       weight: 3
     - name: Search

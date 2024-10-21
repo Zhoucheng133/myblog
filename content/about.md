@@ -17,10 +17,10 @@ type: about
   - [LiveBG](https://github.com/Zhoucheng133/Live-BG) 适用于netPlayer的直播背景
   - [miniKit](https://github.com/Zhoucheng133/netPlayer-mini-kit) 适用于netPlayer的桌面歌词组件
 - [netPlayer Mobile](https://github.com/Zhoucheng133/netPlayer-Mobile) netPlayer的移动端版本
-- [pyFTP GUI](https://github.com/Zhoucheng133/pyftp-GUI) pyftpdlib的GUI图形化程序
-- [AriaUI](https://github.com/Zhoucheng133/AriaUI) Aria下载器的桌面客户端
 - [Virtual Directory](https://github.com/Zhoucheng133/virtual-directory) 文件分享工具
-- [Anime Update Panel](https://github.com/Zhoucheng133/Anime-Update-Panel) 番剧更新助手
 - ~~[MikanHelper](https://github.com/Zhoucheng133/Mikan-Helper) Mikan番剧自动下载工具~~
 - [AnimeHelper](https://github.com/Zhoucheng133/Anime-Helper) 追番追剧&自动下载工具
+- [Subs](https://github.com/Zhoucheng133/Subs) 批量字幕压制工具
+- [Anime Update Panel](https://github.com/Zhoucheng133/Anime-Update-Panel) 番剧更新助手
+- [pyFTP GUI](https://github.com/Zhoucheng133/pyftp-GUI) pyftpdlib的GUI图形化程序
 - [AriaUI](https://github.com/Zhoucheng133/AriaUI) Aria2的图形化桌面程序
