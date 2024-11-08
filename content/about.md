@@ -5,7 +5,7 @@ type: about
 
 嗨！你可以叫我朱珠，我是一个开发者
 
-我会在闲暇之余在[Github](https://github.com/Zhoucheng133)上发布一些有趣的工具
+我会在闲暇之余在[GitHub](https://github.com/Zhoucheng133)上发布一些有趣的工具
 
 我喜欢玩音游，尤其是osu!，你可以[在这里](https://osu.ppy.sh/users/11444852)找到我
 
