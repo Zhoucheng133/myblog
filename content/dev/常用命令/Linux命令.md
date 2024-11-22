@@ -176,3 +176,30 @@ ps aux | grep <进程名称>
 ```bash
 kill <进程ID>
 ```
+
+## 进程管理
+可以使用htop
+```bash
+# 如果没有安装的话
+sudo apt install htop
+
+sudo htop
+```
+
+## 后台执行进程
+可以使用screen
+
+### 安装
+```bash
+sudo apt install screen
+```
+
+### 新建进程
+```bash
+sudo screen -S <进程名称>
+```
+
+### 查看进程
+```bash
+sudo screen -r <进程名称>
+```
