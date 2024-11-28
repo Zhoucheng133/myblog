@@ -100,3 +100,18 @@ TextField(
   obscureText: true;
 ),
 ```
+
+## 仅数字输入
+
+可以使用[FluentUI](https://pub.dev/packages/fluent_ui)依赖的NumberBox实现
+
+如果使用MaterialUI的TexField的话：
+
+```dart
+TextField(
+  controller: key,
+  inputFormatters: [
+    FilteringTextInputFormatter.digitsOnly,
+  ],
+)
+```
