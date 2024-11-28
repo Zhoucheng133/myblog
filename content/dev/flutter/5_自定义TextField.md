@@ -105,7 +105,7 @@ TextField(
 
 可以使用[FluentUI](https://pub.dev/packages/fluent_ui)依赖的NumberBox实现
 
-如果使用MaterialUI的TexField的话：
+如果使用MaterialUI的TexField：
 
 ```dart
 TextField(
