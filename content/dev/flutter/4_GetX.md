@@ -29,18 +29,6 @@ class Controller extends GetxController{
 }
 ```
 
-### 创建赋值函数
-
-```dart
-import 'package:get/get.dart';
-class Controller extends GetxController{
-  // 注意在变量的最后添加".obs"用于实时检测变量变化
-  var paraX="Hello world!".obs;
-  // 注意更新的是变量的"value"，直接给变量赋值无效
-  void updateParaX(data) => paraX.value=data;
-}
-```
-
 ### 在Widget中使用
 
 ```dart
@@ -51,6 +39,8 @@ import 'package:para.dart'
 class myApp extends StatefulWidget{
   // 获取变量
   final Controller c = Get.put(Controller());
+  // 你可以给这个实例化的Controller添加一个Tag，有什么用后面有讲到
+  // final Controller c=Get.put(Controller(), tag="initVal");
   @override
   Widget build(BuildContext context){
     return Center(
@@ -64,9 +54,13 @@ class myApp extends StatefulWidget{
   }
 }
 ```
-**⚠️注意，如果Obx(()=>)中不包含任何GetX变量会报错**
+**⚠️注意，如果`Obx(()=>)`中不包含任何GetX变量会报错**
 
-### 函数中更新
+**⚠️注意，如果在函数（包含Widget内嵌函数）获取变量需要加`.value`**
+
+### 更新变量
+
+#### 一般变量赋值
 
 ```dart
 import 'package:get/get.dart';
@@ -78,8 +72,33 @@ class myApp extends StatefulWidget{
     return Center(
       child: TextButton(
         onPressed: (){
-          // 调用更新函数
-          c.updateParaX("Hello, Flutter!")
+          // 直接赋值更新变量
+          c.paraX.value="Hello, Flutter!"
+        },
+        child: Text("按钮")
+      )
+    )
+  }
+}
+```
+
+#### Map或者List变量赋值
+
+```dart
+import 'package:get/get.dart';
+import 'package:para.dart'
+class myApp extends StatefulWidget{
+  final Controller c = Get.put(Controller());
+  @override
+  Widget build(BuildContext context){
+    return Center(
+      child: TextButton(
+        onPressed: (){
+          // 不需要使用.value
+          c.list[1]="hello";
+          c.list[2]="world!";
+          // 需要在之后刷新这个变量
+          c.list.refresh();
         },
         child: Text("按钮")
       )
