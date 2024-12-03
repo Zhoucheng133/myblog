@@ -15,11 +15,11 @@ GetX是在`Flutter`中创建全局变量/自定义路由/多语言支持等功�
 flutter pub add get
 ```
 
-## 使用
-
-**建议在一个独立的`dart`文件中创建所有全局变量的类**
+## 变量
 
 ### 创建变量
+
+**建议在一个独立的`dart`文件中创建所有全局变量的类**
 
 ```dart
 import 'package:get/get.dart';
@@ -171,6 +171,47 @@ class myApp extends StatefulWidget{
   Widget build(BuildContext context){
     return //...
   }
+}
+```
+## 跨Widget调用
+
+在一个Widget中调用另外一个Widget方法
+
+下面示例为`B Widget`调用`A Widget`的`printHello()`方法
+
+```dart
+
+// Controller
+class Controller extends GetxController{
+  var word='hello Flutter'.obs;
+  
+  void printHello(){
+    print(word.value);
+  }
+}
+
+// A Widget
+class A extends StatefulWidget{
+  // 如果只调用一次，可以忽略tag属性，这个属性用于防止调用多次导致无法区分
+  final Controller c = Get.put(Controller(), tag="controller");
+  return // ...其他内容
+}
+
+// B Widget
+class B extends StatefulWidget{
+  return FilledButton(
+    onPressed: (){
+      // 注意，可能会遇到找不到的情况（如果有），因此使用try-catch
+      try{
+        // 如果只调用一次，可以忽略tag属性，同上
+        final Controller c = Get.find(Controller(), tag="controller");
+        c.printHello();
+      }catch(_){}
+    },
+    child: Text(
+      chid: 'printHello()'
+    )
+  );
 }
 ```
 
