@@ -4,8 +4,35 @@ title: 自定义TextField
 weight: 5
 ---
 
+## 边框设置
 
-## 使用`Container`包裹TextField
+### 添加边框
+
+```dart
+TextField(
+  decoration: InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: '请输入内容',
+  ),
+)
+```
+
+### 设置焦点时边框的颜色粗细
+```dart
+return TextField(
+  decoration: InputDecoration(
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.grey, width: 1.0), // 未选中时的边框
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.blue, width: 2.0), // 选中时的边框
+    ),
+    labelText: '请输入内容',
+  ),
+)
+```
+
+## 使用`Container`包裹`TextField`
 
 ```dart
 return Container(
@@ -27,7 +54,7 @@ return Container(
 );
 ```
 
-## 设置TextField中文本大小
+## 设置`TextField`中文本大小
 
 ```dart
 return Container(
@@ -44,7 +71,7 @@ return Container(
 )
 ```
 
-## 添加TextField中按钮
+## 添加`TextField`中按钮
 
 ```dart
 TextField(
@@ -101,7 +128,9 @@ TextField(
 ),
 ```
 
-## 仅数字输入
+## 输入内容设置
+
+### 仅数字输入
 
 可以使用[FluentUI](https://pub.dev/packages/fluent_ui)依赖的NumberBox实现
 
@@ -115,3 +144,20 @@ TextField(
   ],
 )
 ```
+
+### 自定义筛选
+
+```dart
+TextField(
+  controller: key,
+  inputFormatters: [
+    TextInputFormatter.withFunction((oldValue, newValue){
+      // 需要有返回值，oldValue和newValue都是TextEditingController
+      // 下面的示例，输入长度不得超过10个字符
+      if(newVal.length>10){
+        return oldValue;
+      }
+      return newValue;
+    });
+  ],
+)
