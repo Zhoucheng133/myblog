@@ -204,7 +204,7 @@ class B extends StatefulWidget{
       // 注意，可能会遇到找不到的情况（如果有），因此使用try-catch
       try{
         // 如果只调用一次，可以忽略tag属性，同上
-        final Controller c = Get.find(Controller(), tag="controller");
+        final Controller c = Get.find(tag="controller");
         c.printHello();
       }catch(_){}
     },
