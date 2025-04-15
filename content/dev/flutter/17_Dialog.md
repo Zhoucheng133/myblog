@@ -117,6 +117,8 @@ void initState(){
 
 如果需要在App打开的时候调用，需要使用回调函数，等待`context`加载完成
 
+注意！不要在父层级没有Scafford的情况使用它
+
 ```dart
 @override
 void initState(){
