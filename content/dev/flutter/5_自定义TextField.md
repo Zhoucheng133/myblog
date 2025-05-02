@@ -145,6 +145,21 @@ TextField(
 )
 ```
 
+或者也可以通过设置软键盘模式：
+
+```dart
+TextField(
+  // 如果需要小数点：
+  // keyboardType: TextInputType.numberWithOptions(decimal: true),
+  // 如果不需要：
+  keyboardType: TextInputType.number,
+  controller: key,
+  inputFormatters: [
+    FilteringTextInputFormatter.digitsOnly,
+  ],
+)
+```
+
 ### 自定义筛选
 
 ```dart
