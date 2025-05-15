@@ -19,3 +19,4 @@ sidebar:
 - [Hooks](11_hooks)
 - [pinia](12_pinia)
 - [路由](13_路由)
+- [剪贴板](14_剪贴板)
