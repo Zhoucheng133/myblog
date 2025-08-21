@@ -33,3 +33,5 @@ try {
 cls
 ```
 注意：`montys`这里是主题的名称，所有的主题可以见[oh-my-posh官网](https://ohmyposh.dev/docs/themes)
+
+比如将其替换为`robbyrussell.omp.json`
