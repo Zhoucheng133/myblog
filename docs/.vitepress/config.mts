@@ -65,6 +65,16 @@ export default defineConfig({
               { text: '动画', link: '/dev/css/4_动画' },
               { text: 'Flex布局', link: '/dev/css/5_Flex布局' },
             ]
+          },
+          {
+            text: "Docker",
+            collapsed: true,
+            items: [
+              { text: 'Dockerfile', link: '/dev/docker/1_dockerfile' },
+              { text: '创建镜像', link: '/dev/docker/2_创建镜像' },
+              { text: '创建容器', link: '/dev/docker/3_创建容器' },
+              { text: '与主机通信', link: '/dev/docker/4_与主机通信' },
+            ]
           }
         ]
       }
