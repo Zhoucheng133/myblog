@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-CN', 
   title: "博客",
   description: "A blog",
   themeConfig: {
@@ -10,6 +11,19 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '我的作品', link: '/mywork/mywork' }
     ],
+
+    darkModeSwitchLabel: "切换主题",
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
+    outlineTitle: "页面内容",
+    returnToTopLabel: "返回顶部",
+    sidebarMenuLabel: "菜单",
+
+    search: {
+      provider: 'local',
+    },
 
     sidebar: [
       {

@@ -52,7 +52,7 @@ return Container(
 
 ## 设置`TextField`中文本大小
 
-```dart
+```dart{8}
 return Container(
   decoration: BoxDecoration(
     
@@ -60,7 +60,6 @@ return Container(
   child: TextField(
     controller: inputController,
     style: TextStyle(
-      // 在这里输入需要的文本大小
       fontSize: 14,
     )
   )
@@ -92,12 +91,10 @@ TextField(
 
 ## 禁用自动纠错
 
-```dart
+```dart{3-4}
 TextField(
   controller: key,
-  // 是否自动纠错
   autocorrect: false,
-  // 是否显示提示
   enableSuggestions: false,
 ),
 ```
@@ -117,7 +114,7 @@ TextField(
 
 ## 密码框
 
-```dart
+```dart{3}
 TextField(
   controller: key,
   obscureText: true;
@@ -132,7 +129,7 @@ TextField(
 
 如果使用MaterialUI的TexField：
 
-```dart
+```dart{3-5}
 TextField(
   controller: key,
   inputFormatters: [

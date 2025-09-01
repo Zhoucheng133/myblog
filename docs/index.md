@@ -7,9 +7,6 @@ hero:
   text: "ZhouC's Blog"
   actions:
     - theme: brand
-      text: 我的作品
-      link: /mywork/mywork
-    - theme: alt
       text: 开发文档
       link: /dev/index
     - theme: alt
@@ -17,4 +14,3 @@ hero:
       link: /media/index
   
 ---
-
