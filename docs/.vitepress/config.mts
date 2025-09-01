@@ -87,6 +87,15 @@ export default defineConfig({
               { text: '主进程常用', link: '/dev/electron/5_主进程常用' },
               { text: '添加Electron图标', link: '/dev/electron/6_添加Electron图标' },
             ]
+          },
+          {
+            text: "常用命令",
+            collapsed: true,
+            items: [
+              { text: 'Linux常用命令', link: '/dev/electron/1_Linux命令' },
+              { text: 'Mac常用命令', link: '/dev/electron/2_Mac命令' },
+              { text: 'Windows常用命令', link: '/dev/electron/3_Windows命令' },
+            ]
           }
         ]
       }
