@@ -149,6 +149,27 @@ export default defineConfig({
               { text: 'v-on', link: '/dev/vue2/15_v-on' },
             ]
           },
+          {
+            text: "Vue3",
+            collapsed: true,
+            items: [
+              { text: '创建vue项目', link: '/dev/vue3/0_创建vue项目' },
+              { text: '管理项目', link: '/dev/vue3/1_管理项目' },
+              { text: '文件结构', link: '/dev/vue3/2_文件结构' },
+              { text: '组件', link: '/dev/vue3/3_组件' },
+              { text: '变量', link: '/dev/vue3/4_变量' },
+              { text: '函数', link: '/dev/vue3/5_函数' },
+              { text: '计算属性', link: '/dev/vue3/6_计算属性' },
+              { text: '监听属性', link: '/dev/vue3/7_监听属性' },
+              { text: '获取DOM元素', link: '/dev/vue3/8_获取DOM元素' },
+              { text: '组合式函数', link: '/dev/vue3/9_组合式函数' },
+              { text: '钩子函数', link: '/dev/vue3/10_钩子函数' },
+              { text: 'Hooks', link: '/dev/vue3/11_Hooks' },
+              { text: 'pinia', link: '/dev/vue3/12_pinia' },
+              { text: '路由', link: '/dev/vue3/13_路由' },
+              { text: '剪贴板', link: '/dev/vue3/14_剪贴板' },
+            ]
+          },
         ]
       }
     ],
