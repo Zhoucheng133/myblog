@@ -6,6 +6,9 @@ export default defineConfig({
   title: "博客",
   base: '/myblog',
   description: "A blog",
+  head: [
+    ['link', { rel: 'icon', href: '/myblog/icon.png'}]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
