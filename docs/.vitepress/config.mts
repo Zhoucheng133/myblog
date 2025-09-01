@@ -107,7 +107,26 @@ export default defineConfig({
               { text: '网络请求', link: '/dev/javascript/4_网络请求' },
               { text: '时间和日期', link: '/dev/javascript/5_时间和日期' },
             ]
-          }
+          },
+          {
+            text: "React",
+            collapsed: true,
+            items: [
+              { text: '创建React项目', link: '/dev/react/1_创建React项目' },
+              { text: '文件结构', link: '/dev/react/2_文件结构' },
+              { text: '变量和函数', link: '/dev/react/3_变量和函数' },
+              { text: '遍历列表', link: '/dev/react/4_遍历列表' },
+              { text: '条件判定', link: '/dev/react/5_条件判定' },
+              { text: '事件绑定', link: '/dev/react/6_事件绑定' },
+              { text: '组件', link: '/dev/react/7_组件' },
+              { text: 'useState', link: '/dev/react/8_useState' },
+              { text: '样式控制', link: '/dev/react/9_样式控制' },
+              { text: '获取DOM元素', link: '/dev/react/10_获取DOM元素' },
+              { text: 'useEffect', link: '/dev/react/11_useEffect' },
+              { text: '自定义Hook', link: '/dev/react/12_自定义Hook' },
+              { text: '状态管理器', link: '/dev/react/13_状态管理器' },
+            ]
+          },
         ]
       }
     ],
