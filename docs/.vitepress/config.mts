@@ -75,6 +75,18 @@ export default defineConfig({
               { text: '创建容器', link: '/dev/docker/3_创建容器' },
               { text: '与主机通信', link: '/dev/docker/4_与主机通信' },
             ]
+          },
+          {
+            text: "Electron",
+            collapsed: true,
+            items: [
+              { text: '创建Electron项目', link: '/dev/electron/1_创建Electron项目' },
+              { text: '配置Electron', link: '/dev/electron/2_配置Electron' },
+              { text: 'Electron主进程链接', link: '/dev/electron/3_Electron主进程链接' },
+              { text: 'Electron创建菜单', link: '/dev/electron/4_Electron创建菜单' },
+              { text: '主进程常用', link: '/dev/electron/5_主进程常用' },
+              { text: '添加Electron图标', link: '/dev/electron/6_添加Electron图标' },
+            ]
           }
         ]
       }
