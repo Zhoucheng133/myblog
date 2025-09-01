@@ -96,6 +96,17 @@ export default defineConfig({
               { text: 'Mac常用命令', link: '/dev/常用命令/2_Mac命令' },
               { text: 'Windows常用命令', link: '/dev/常用命令/3_Windows命令' },
             ]
+          },
+          {
+            text: "JavaScript",
+            collapsed: true,
+            items: [
+              { text: '类型转换和方法', link: '/dev/javascript/1_类型转换和方法' },
+              { text: '异步处理', link: '/dev/javascript/2_异步处理' },
+              { text: '数组', link: '/dev/javascript/3_数组' },
+              { text: '网络请求', link: '/dev/javascript/4_网络请求' },
+              { text: '时间和日期', link: '/dev/javascript/5_时间和日期' },
+            ]
           }
         ]
       }
