@@ -127,6 +127,28 @@ export default defineConfig({
               { text: '状态管理器', link: '/dev/react/13_状态管理器' },
             ]
           },
+          {
+            text: "Vue2",
+            collapsed: true,
+            items: [
+              { text: '创建vue2项目', link: '/dev/vue2/0_创建vue2项目' },
+              { text: '管理项目', link: '/dev/vue2/1_管理项目' },
+              { text: 'router的使用', link: '/dev/vue2/2_router的使用' },
+              { text: '项目的结构', link: '/dev/vue2/3_项目的结构' },
+              { text: '文件结构', link: '/dev/vue2/4_文件结构' },
+              { text: '组件', link: '/dev/vue2/5_组件' },
+              { text: '变量', link: '/dev/vue2/6_变量' },
+              { text: 'v-if和v-show', link: '/dev/vue2/7_v-if和v-show' },
+              { text: 'v-bind', link: '/dev/vue2/8_v-bind' },
+              { text: 'v-for', link: '/dev/vue2/9_v-for' },
+              { text: 'ref', link: '/dev/vue2/10_ref' },
+              { text: '钩子函数', link: '/dev/vue2/11_钩子函数' },
+              { text: 'watch', link: '/dev/vue2/12_watch' },
+              { text: 'methods', link: '/dev/vue2/13_methods' },
+              { text: 'computed', link: '/dev/vue2/14_computed' },
+              { text: 'v-on', link: '/dev/vue2/15_v-on' },
+            ]
+          },
         ]
       }
     ],
