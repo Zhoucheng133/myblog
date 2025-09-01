@@ -92,9 +92,9 @@ export default defineConfig({
             text: "常用命令",
             collapsed: true,
             items: [
-              { text: 'Linux常用命令', link: '/dev/electron/1_Linux命令' },
-              { text: 'Mac常用命令', link: '/dev/electron/2_Mac命令' },
-              { text: 'Windows常用命令', link: '/dev/electron/3_Windows命令' },
+              { text: 'Linux常用命令', link: '/dev/常用命令/1_Linux命令' },
+              { text: 'Mac常用命令', link: '/dev/常用命令/2_Mac命令' },
+              { text: 'Windows常用命令', link: '/dev/常用命令/3_Windows命令' },
             ]
           }
         ]
