@@ -171,6 +171,19 @@ export default defineConfig({
             ]
           },
         ]
+      },
+      {
+        text: '视频制作文档',
+        link: '/media/index',
+        items: [
+          {
+            text: 'AE',
+            collapsed: true,
+            items: [
+              { text: "AE快捷键", link: "/media/ae/1_常用快捷键" }
+            ]
+          }
+        ]
       }
     ],
 

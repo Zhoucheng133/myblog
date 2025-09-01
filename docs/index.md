@@ -14,6 +14,7 @@ hero:
       link: /dev/index
     - theme: alt
       text: 视频制作文档
+      link: /media/index
   
 ---
 
