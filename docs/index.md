@@ -4,22 +4,16 @@ layout: home
 
 hero:
   name: "博客"
-  text: "A blog"
-  tagline: My great project tagline
+  text: "ZhouC's Blog"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 我的作品
+      link: /mywork/mywork
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: 开发文档
+      link: /dev/index
+    - theme: alt
+      text: 视频制作文档
+  
 ---
 
