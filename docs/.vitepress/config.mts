@@ -22,6 +22,7 @@ export default defineConfig({
         items: [
           {
             text: 'Flutter', 
+            collapsed: true,
             items: [
               { text: '保存设置', link: '/dev/flutter/1_保存设置' },
               { text: 'GestureDetector', link: '/dev/flutter/2_GestureDetector' },
@@ -52,8 +53,19 @@ export default defineConfig({
               { text: '水波纹效果', link: '/dev/flutter/27_水波纹效果' },
               { text: '连接到动态库', link: '/dev/flutter/28_连接到动态库' },
               { text: '暗色模式', link: '/dev/flutter/29_暗色模式' },
-            ]
+            ],
           },
+          {
+            text: 'CSS',
+            collapsed: true,
+            items: [
+              { text: '常用语法', link: '/dev/css/1_常用语法' },
+              { text: '各种单位', link: '/dev/css/2_各种单位' },
+              { text: 'Grid布局', link: '/dev/css/3_Grid布局' },
+              { text: '动画', link: '/dev/css/4_动画' },
+              { text: 'Flex布局', link: '/dev/css/5_Flex布局' },
+            ]
+          }
         ]
       }
     ],
