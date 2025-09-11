@@ -4,10 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN', 
   title: "博客",
-  base: '/myblog',
   description: "A blog",
   head: [
-    ['link', { rel: 'icon', href: '/myblog/icon.png'}]
+    ['link', { rel: 'icon', href: '/icon.png'}]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
