@@ -171,6 +171,16 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2"><a href="https://github.com/Zhoucheng133/Jackett-Helper">Jackett Helper</a></td>
+        <td><a href="https://github.com/Zhoucheng133/Jackett-Helper">Server</a></td>
+        <td>ElysiaJS</td>
+        <td rowspan="2">Add task to aria from Jackett</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Zhoucheng133/Jackett-Helper-Web">WebUI</a></td>
+        <td>Vue</td>
+    </tr>
+    <tr>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Index-Page">Index Page</a></td>
         <td><a href="https://github.com/Zhoucheng133/Index-Page-Core">Server</a></td>
         <td>Gin</td>
@@ -194,7 +204,7 @@
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Monitor">Monitor</a></td>
         <td><a href="https://github.com/Zhoucheng133/Monitor">Server</a></td>
         <td>Spring (Kotlin)</td>
-        <td rowspan="2">System monitor page [TEST]</td>
+        <td rowspan="2">System monitor page</td>
     </tr>
     <tr>
         <td><a href="https://github.com/Zhoucheng133/Monitor-UI">WebUI</a></td>
