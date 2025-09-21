@@ -125,18 +125,14 @@
         <td>Vue</td>
     </tr>
     <tr>
-        <td><img src="./assets/ariaui.png" width=50/></td>
+        <td rowspan=2><img src="./assets/ariaui.png" width=50/></td>
         <td><del><a href="https://github.com/Zhoucheng133/AriaUI">Aria UI</a></del></td>
-        <td>/</td>
-        <td>Flutter</td>
-        <td>[Merge to BitFlow]</td>
+        <td rowspan=2>/</td>
+        <td rowspan=2>Flutter</td>
+        <td rowspan=2>[Merge to BitFlow]</td>
     </tr>
     <tr>
-        <td><img src="./assets/ariaui.png" width=50/></td>
         <td><del><a href="https://github.com/Zhoucheng133/Aria-Remote">Aria Remote</a></del></td>
-        <td>/</td>
-        <td>Flutter</td>
-        <td>[Merge to BitFlow]</td>
     </tr>
     <tr>
         <td><img src="./assets/aup.png" width=50/></td>
@@ -153,6 +149,7 @@
 <table style="text-align: left">
 <thead>
     <tr>
+        <th>Icon</th>
         <th>Name</th>
         <th>Components</th>
         <th>Framework</th>
@@ -161,6 +158,7 @@
 </thead>
 <tbody>
     <tr>
+        <td rowspan="2"><img src="./assets/animehelper.png" width=50/></td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Anime-Helper">Anime Helper</a></td>
         <td><a href="https://github.com/Zhoucheng133/Anime-Helper">Server</a></td>
         <td>ElysiaJS</td>
@@ -171,6 +169,7 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2"><img src="./assets/jacketthelper.png" width=50/></td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Jackett-Helper">Jackett Helper</a></td>
         <td><a href="https://github.com/Zhoucheng133/Jackett-Helper">Server</a></td>
         <td>ElysiaJS</td>
@@ -181,6 +180,7 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2">/</td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Index-Page">Index Page</a></td>
         <td><a href="https://github.com/Zhoucheng133/Index-Page-Core">Server</a></td>
         <td>Gin</td>
@@ -191,6 +191,7 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2">/</td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/SHT-API">SHT API</a></td>
         <td><a href="https://github.com/Zhoucheng133/SHT-API">Server</a></td>
         <td>FastAPI</td>
@@ -201,6 +202,7 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2">/</td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Monitor">Monitor</a></td>
         <td><a href="https://github.com/Zhoucheng133/Monitor">Server</a></td>
         <td>Spring (Kotlin)</td>
@@ -211,6 +213,7 @@
         <td>Vue</td>
     </tr>
     <tr>
+        <td rowspan="2">/</td>
         <td rowspan="2"><del><a href="https://github.com/Zhoucheng133/Mikan-Helper">Mikan Helper</a></del></td>
         <td><del><a href="https://github.com/Zhoucheng133/Mikan-Helper">Server</a></del></td>
         <td>Flask</td>
