@@ -9,6 +9,7 @@
         <th>Name</th>
         <th>Components</th>
         <th>Framework</th>
+        <th>Platform</th>
         <th>Detail</th>
     </tr>
 </thead>
@@ -18,6 +19,7 @@
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/netPlayer-Next">netPlayer</a></td>
         <td><a href="https://github.com/Zhoucheng133/netPlayer-Next">App</a></td>
         <td rowspan="2">Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="2">Subsonic & Navidrome based desktop music player</td>
     </tr>
     <tr>
@@ -28,6 +30,7 @@
         <td><a href="https://github.com/Zhoucheng133/netPlayer-Mobile">netPlayer Mobile</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td><img src="./assets/platform/m.png" width=30/></td>
         <td>Subsonic & Navidrome based mobile music player</td>
     </tr>
     <tr>
@@ -35,6 +38,7 @@
         <td rowspan="3"><a href="https://github.com/Zhoucheng133/Sharer-App">Sharer</a></td>
         <td><a href="https://github.com/Zhoucheng133/Sharer-App">App</a></td>
         <td>Flutter</td>
+        <td rowspan="3"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="3">File sharing tool based on Flutter</td>
     </tr>
     <tr>
@@ -50,6 +54,7 @@
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/DAV-Server">DAV Server</a></td>
         <td><a href="https://github.com/Zhoucheng133/DAV-Server">App</a></td>
         <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="2">WebDAV Server</td>
     </tr>
     <tr>
@@ -61,13 +66,25 @@
         <td><a href="https://github.com/Zhoucheng133/BitFlow">BitFlow</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td>
+        <img src="./assets/platform/cross.png" width=30/>
+        </td>
         <td >qBittorrent & Aria Cilent for desktop & mobile</td>
+    </tr>
+    <tr>
+        <td><img src="./assets/whisper.png" width=50/></td>
+        <td><a href="https://github.com/Zhoucheng133/Whisper-GUI">Whisper GUI</a></td>
+        <td>/</td>
+        <td>Flutter</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
+        <td >Whisper GUI helper</td>
     </tr>
     <tr>
         <td rowspan="2"><img src="./assets/archiver.png" width=50/></td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/Photo-Archiver">PhotoArchiver</a></td>
         <td><a href="https://github.com/Zhoucheng133/Photo-Archiver">App</a></td>
         <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="2">Make photos grouped by datetime</td>
     </tr>
     <tr>
@@ -79,6 +96,7 @@
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/EXIF-Helper">EXIF Helper</a></td>
         <td><a href="https://github.com/Zhoucheng133/EXIF-Helper">App</a></td>
         <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="2">Add EXIF ​​watermark tool</td>
     </tr>
     <tr>
@@ -90,6 +108,7 @@
         <td><a href="https://github.com/Zhoucheng133/Subs">Subs</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td ><img src="./assets/platform/d.png" width=30/></td>
         <td>Multi subtitles burning tool</td>
     </tr>
     <tr>
@@ -97,6 +116,7 @@
         <td><a href="https://github.com/Zhoucheng133/pyftp-GUI">pyftp GUI</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
         <td>pyftpdlib GUI helper</td>
     </tr>
     <tr>
@@ -104,6 +124,7 @@
         <td><a href="https://github.com/Zhoucheng133/FFmpegGUI">FFmpeg GUI</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
         <td>FFmpeg GUI helper</td>
     </tr>
     <tr>
@@ -111,6 +132,7 @@
         <td><a href="https://github.com/Zhoucheng133/EasyChat">EasyChat</a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
         <td>OpenAPI Client</td>
     </tr>
     <tr>
@@ -118,6 +140,7 @@
         <td rowspan="2"><del><a href="https://github.com/Zhoucheng133/virtual-directory">Virtual Directory</a></del></td>
         <td><del><a href="https://github.com/Zhoucheng133/virtual-directory">App</a></del></td>
         <td>Electron</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
         <td rowspan="2">[Split to Sharer and DAV Server]</td>
     </tr>
     <tr>
@@ -129,6 +152,7 @@
         <td><del><a href="https://github.com/Zhoucheng133/AriaUI">Aria UI</a></del></td>
         <td rowspan=2>/</td>
         <td rowspan=2>Flutter</td>
+        <td rowspan=2><img src="./assets/platform/cross.png" width=30/></td>
         <td rowspan=2>[Merge to BitFlow]</td>
     </tr>
     <tr>
@@ -139,6 +163,7 @@
         <td> <a href="https://github.com/Zhoucheng133/Anime-Update-Panel"><del>Anime Update Panel</del></a></td>
         <td>/</td>
         <td>Flutter</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
         <td>[Merge to Anime Helper]</td>
     </tr>
 </tbody>
