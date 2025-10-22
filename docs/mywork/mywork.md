@@ -1,6 +1,6 @@
 # My works
 
-## Applications
+## Application
 
 <table style="text-align: left">
 <thead>
@@ -169,7 +169,7 @@
 </tbody>
 </table>
 
-## Services
+## Service
 
 <table style="text-align: left">
 <thead>
