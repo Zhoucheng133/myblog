@@ -1,22 +1,6 @@
-# Linux常用命令
+# nginx
 
-## 查看IP地址
-
-- IPv4地址
-
-  ```bash
-  curl 4.ipw.cn
-  ```
-
-- IPv6地址
-
-  ```bash
-  curl 6.ipw.cn
-  ```
-
-## nginx
-
-### 安装
+## 安装
 
 ```bash
 sudo apt update
@@ -79,7 +63,7 @@ http {
 }
 ```
 
-### 添加静态页面
+## 添加静态页面
 
 **（下面代码仅显示server部分）**
 
@@ -135,8 +119,9 @@ server{
 	ssl_certificate_key /path/to/example.com.key;	# ssl key的位置
 
 	# 反向代理，当访问到/api时=>
+	# 注意反向代理的时候不会去处/api路径
   location /api{
-  	proxy_pass http://127.0.0.1:8080/api;
+  	proxy_pass http://127.0.0.1:3000/api;
   }
 
 	# 访问根目录=>
@@ -156,46 +141,8 @@ server{
 server.servlet.context-path=/api
 ```
 
-### 重启nginx
+## 重启nginx
 
 ```bash
 sudo systemctl restart nginx
-```
-
-## 搜索进程
-
-```bash
-ps aux | grep <进程名称>
-```
-
-得到的结果**第二列**为进程ID，可以使用命令来销毁
-```bash
-kill <进程ID>
-```
-
-## 进程管理
-可以使用htop
-```bash
-# 如果没有安装的话
-sudo apt install htop
-
-sudo htop
-```
-
-## 后台执行进程
-可以使用screen
-
-### 安装
-```bash
-sudo apt install screen
-```
-
-### 新建进程
-```bash
-sudo screen -S <进程名称>
-```
-
-### 查看进程
-```bash
-sudo screen -r <进程名称>
 ```
