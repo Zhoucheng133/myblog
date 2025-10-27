@@ -114,6 +114,7 @@ export default defineConfig({
               { text: 'Mac常用命令', link: '/dev/杂项/2_Mac命令' },
               { text: 'oh-my-posh', link: '/dev/杂项/3_oh_my_posh' },
               { text: 'nginx', link: '/dev/杂项/4_nginx' },
+              { text: 'Caddy', link: '/dev/杂项/5_caddy' },
             ]
           },
           {
