@@ -1,6 +1,4 @@
-# Windows常用命令
-
-## 使用oh-my-posh
+# oh-my-posh
 
 1. 在Windows应用商店找到oh-my-posh
 2. 使用命令打开`powershell`的配置文件:
