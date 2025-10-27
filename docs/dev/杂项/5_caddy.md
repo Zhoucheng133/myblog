@@ -65,3 +65,9 @@ example.com {
 |-|-|-|
 handle|example.com/api/test|localhost:3000/api/test
 handle_path|example.com/api/test|localhost:3000/test
+
+## 重启Caddy
+
+```bash
+caddy reload
+```
