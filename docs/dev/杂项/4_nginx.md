@@ -119,8 +119,9 @@ server{
 	ssl_certificate_key /path/to/example.com.key;	# ssl key的位置
 
 	# 反向代理，当访问到/api时=>
+	# 注意反向代理的时候不会去处/api路径
   location /api{
-  	proxy_pass http://127.0.0.1:8080/api;
+  	proxy_pass http://127.0.0.1:3000/api;
   }
 
 	# 访问根目录=>
