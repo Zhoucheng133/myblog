@@ -104,6 +104,18 @@
         <td>Go</td>
     </tr>
     <tr>
+        <td rowspan="2"><img src="./assets/heic.png" width=50/></td>
+        <td rowspan="2"><a href="https://github.com/Zhoucheng133/HEIC-Converter">HEIC Converter</a></td>
+        <td><a href="https://github.com/Zhoucheng133/HEIC-Converter">App</a></td>
+        <td>Tauri</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
+        <td rowspan="2">HEIC & HEIF convert tool</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Zhoucheng133/HEIC-Converter-Core">Core</a></td>
+        <td>Python</td>
+    </tr>
+    <tr>
         <td><img src="./assets/subs.png" width=50/></td>
         <td><a href="https://github.com/Zhoucheng133/Subs">Subs</a></td>
         <td>/</td>
