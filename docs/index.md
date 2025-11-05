@@ -34,6 +34,7 @@ hero:
 - [DAV Server](https://github.com/Zhoucheng133/DAV-Server)
 - [BitFlow](https://github.com/Zhoucheng133/BitFlow)
 - [EXIF Helper](https://github.com/Zhoucheng133/EXIF-Helper)
+- [HEIC Converter](https://github.com/Zhoucheng133/HEIC-Converter)
 - [Subs](https://github.com/Zhoucheng133/Subs)
 - [pyFTP GUI](https://github.com/Zhoucheng133/pyftp-GUI)
 - [FFmpeg GUI](https://github.com/Zhoucheng133/FFmpegGUI)
