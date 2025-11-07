@@ -66,6 +66,20 @@ example.com {
 handle|example.com/api/test|localhost:3000/api/test
 handle_path|example.com/api/test|localhost:3000/test
 
+## 添加扩展
+
+Caddy的所有扩展可以在[这里](https://caddyserver.com/download)找到
+
+```bash
+sudo caddy add-package <链接地址>
+```
+
+比如
+
+```bash
+sudo caddy add-package github.com/caddy-dns/alidns
+```
+
 ## 重启Caddy
 
 ```bash
