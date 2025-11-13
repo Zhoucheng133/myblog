@@ -89,6 +89,18 @@ return MaterialApp(
 )
 ```
 
+::: warning 注意
+新版本的Flutter在macOS平台上默认禁用了网络请求，而Google Font需要网络请求字体，因此你需要设置它
+:::
+
+你需要在`macos/Runner/Release.entitlements`和`macos/Runner/DebugProfile.entitlements`中添加
+
+```entitlements
+<key>com.apple.security.network.client</key>
+<true/>
+```
+
+
 ## 使用本地字体
 
 ### 获取字体
