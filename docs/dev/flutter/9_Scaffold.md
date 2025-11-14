@@ -84,12 +84,27 @@ return Scaffold(
 
 ## 一些问题
 
+:::tip
 对于`BottomNavigationBar`，会出现当使用软键盘的时候被软键盘托起，这时候需要这样修改：
+:::
 
 ```dart
 return Scaffold(
-  // 添加下面这行
-  resizeToAvoidBottomInset: false,
+  // 添加下面这行表示不希望受到软键盘的影响
+  resizeToAvoidBottomInset: false,  // [!code ++]
   // ...
+);
+```
+
+:::tip
+新版本的Flutter中AppBar可能会受到ListView的影响，这时候需要这样修改
+:::
+
+```dart
+return Scaffold(
+  appBar: AppBar(
+    scrolledUnderElevation: 0.0,  // [!code ++]
+    // ...
+  ),
 );
 ```
