@@ -16,22 +16,35 @@ flutter pub add get
 
 **建议在一个独立的`dart`文件中创建所有全局变量的类**
 
+:::warning
+注意这个类定义需要添加`extends GetxController`
+:::
+
 ```dart
 import 'package:get/get.dart';
 class Controller extends GetxController{
   // 注意在变量的最后添加".obs"用于实时检测变量变化
-  var paraX="Hello world!".obs;
+  RxString paraX="Hello world!".obs; // [!code ++]
+  RxList list=<String>[].obs; // [!code ++]
 }
 ```
 
 ### 在Widget中使用
+
+:::tip
+对于非`Map`或者`List`类型的GetX变量需要添加上`.value`
+
+`Map`或者`List`不需要
+:::
+
+#### 一般变量
 
 ```dart
 import 'package:get/get.dart';
 // 别忘了导入全局变量的文件
 import 'package:para.dart'
 // 可以使用StatefulWidget
-class myApp extends StatefulWidget{
+class MyApp extends StatefulWidget{
   // 获取变量
   final Controller c = Get.put(Controller()); // [!code ++]
   // 你可以给这个实例化的Controller添加一个Tag，有什么用后面有讲到
@@ -49,10 +62,30 @@ class myApp extends StatefulWidget{
 }
 ```
 
+#### Map或者List变量
+
+```dart
+import 'package:get/get.dart';
+// 别忘了导入全局变量的文件
+import 'package:para.dart'
+// 可以使用StatefulWidget
+class MyApp extends StatefulWidget{
+  // 获取变量
+  final Controller c = Get.put(Controller()); // [!code ++]
+  @override
+  Widget build(BuildContext context){
+    return ListView.builder(  // [!code ++]
+      itemCount: c.list.length, // [!code ++]
+      itemBuilder: (BuildContext context, int index) => Text(c.list[index]) // [!code ++]
+    ) // [!code ++]
+  }
+}
+```
+
+列表详细用法见[列表](23_列表)
+
 :::warning
 如果`Obx(()=>)`中不包含任何GetX变量会报错
-
-在函数（包含Widget内嵌函数）获取变量需要加`.value`
 :::
 
 ### 更新变量
@@ -62,7 +95,7 @@ class myApp extends StatefulWidget{
 ```dart
 import 'package:get/get.dart';
 import 'package:para.dart'
-class myApp extends StatefulWidget{
+class MyApp extends StatefulWidget{
   final Controller c = Get.put(Controller());
   @override
   Widget build(BuildContext context){
@@ -84,7 +117,7 @@ class myApp extends StatefulWidget{
 ```dart
 import 'package:get/get.dart';
 import 'package:para.dart'
-class myApp extends StatefulWidget{
+class MyApp extends StatefulWidget{
   final Controller c = Get.put(Controller());
   @override
   Widget build(BuildContext context){
@@ -92,10 +125,10 @@ class myApp extends StatefulWidget{
       child: TextButton(
         onPressed: (){
           // 不需要使用.value
-          c.list[1]="hello";
-          c.list[2]="world!";
+          c.list[1]="hello";  // [!code ++]
+          c.list[2]="world!"; // [!code ++]
           // 需要在之后刷新这个变量
-          c.list.refresh();
+          c.list.refresh(); // [!code ++]
         },
         child: Text("按钮")
       )
@@ -119,7 +152,7 @@ class Controller extends GetxController{
 ```dart
 import 'package:get/get.dart';
 import 'package:para.dart'
-class myApp extends StatefulWidget{
+class MyApp extends StatefulWidget{
   final Controller c = Get.put(Controller());
 
   @override
@@ -145,7 +178,7 @@ class myApp extends StatefulWidget{
 ```dart
 import 'package:get/get.dart';
 import 'package:para.dart'
-class myApp extends StatefulWidget{
+class MyApp extends StatefulWidget{
   final Controller c = Get.put(Controller());
 
   // 注意变量类型
