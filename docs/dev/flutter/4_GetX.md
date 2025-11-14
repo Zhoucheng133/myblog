@@ -33,25 +33,27 @@ import 'package:para.dart'
 // 可以使用StatefulWidget
 class myApp extends StatefulWidget{
   // 获取变量
-  final Controller c = Get.put(Controller());
+  final Controller c = Get.put(Controller()); // [!code ++]
   // 你可以给这个实例化的Controller添加一个Tag，有什么用后面有讲到
   // final Controller c=Get.put(Controller(), tag="initVal");
   @override
   Widget build(BuildContext context){
     return Center(
-      child: Obx(()=>{
-        Text(
-          // 不需要添加value属性，直接使用
-          c.paraX
-        )
-      })
+      child: Obx(()=>{  // [!code ++]
+        Text( // [!code ++]
+          c.paraX.value // [!code ++]
+        ) // [!code ++]
+      })  // [!code ++]
     )
   }
 }
 ```
-**⚠️注意，如果`Obx(()=>)`中不包含任何GetX变量会报错**
 
-**⚠️注意，如果在函数（包含Widget内嵌函数）获取变量需要加`.value`**
+:::warning
+如果`Obx(()=>)`中不包含任何GetX变量会报错
+
+在函数（包含Widget内嵌函数）获取变量需要加`.value`
+:::
 
 ### 更新变量
 
@@ -68,7 +70,7 @@ class myApp extends StatefulWidget{
       child: TextButton(
         onPressed: (){
           // 直接赋值更新变量
-          c.paraX.value="Hello, Flutter!"
+          c.paraX.value="Hello, Flutter!" // [!code ++]
         },
         child: Text("按钮")
       )
@@ -124,9 +126,9 @@ class myApp extends StatefulWidget{
   void initState() {
     super.initState();
     // ever([arg],(callback){})
-    ever(c.paraX, (callback) {
-      // 如果发生了更新，会执行这里的函数
-    });
+    ever(c.paraX, (callback) {  // [!code ++]
+      // 如果发生了更新，会执行这里的函数 // [!code ++]
+    }); // [!code ++]
   }
 
   @override
@@ -136,7 +138,9 @@ class myApp extends StatefulWidget{
 }
 ```
 
-**⚠️注意，如果这个Widget可能会被销毁，务必在销毁的同时销毁监听**
+:::warning
+如果这个Widget可能会被销毁，务必在销毁的同时销毁监听
+:::
 
 ```dart
 import 'package:get/get.dart';
@@ -159,7 +163,7 @@ class myApp extends StatefulWidget{
   void dispose() {
     super.dispose();
     // 注意销毁监听
-    listener.dispose();
+    listener.dispose(); // [!code ++]
   }
 
   @override
@@ -188,7 +192,7 @@ class Controller extends GetxController{
 // A Widget
 class A extends StatefulWidget{
   // 如果只调用一次，可以忽略tag属性，这个属性用于防止调用多次导致无法区分
-  final Controller c = Get.put(Controller(), tag="controller");
+  final Controller c = Get.put(Controller(), tag="controller"); // [!code ++]
   return // ...其他内容
 }
 
@@ -199,7 +203,7 @@ class B extends StatefulWidget{
       // 注意，可能会遇到找不到的情况（如果有），因此使用try-catch
       try{
         // 如果只调用一次，可以忽略tag属性，同上
-        final Controller c = Get.find(tag="controller");
+        final Controller c = Get.find(tag="controller");  // [!code ++]
         c.printHello();
       }catch(_){}
     },
@@ -265,13 +269,13 @@ class MainTranslations extends Translations {
 
 ```dart
 return GetMaterialApp(
-  translations: MainTranslations(),   // 在这里调用
+  translations: MainTranslations(),   // 在这里调用 // [!code ++]
   localizationsDelegates: const [
     GlobalMaterialLocalizations.delegate,
     GlobalWidgetsLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate
   ],
-  locale: const Locale('zh', 'CN'),   // 默认语言
+  locale: const Locale('zh', 'CN'),   // 默认语言 // [!code ++]
   supportedLocales: const [
     Locale('en', 'US'),
     Locale('zh', 'CN'),
