@@ -98,7 +98,9 @@ showDialog(
 
 ## 在`initState`中使用
 
-注意，如果直接调用`showDialog`会报错
+:::warning
+不要在父层级没有Scafford的情况使用它，例如这样
+:::
 
 ```dart
 @override
@@ -111,8 +113,6 @@ void initState(){
 ```
 
 如果需要在App打开的时候调用，需要使用回调函数，等待`context`加载完成
-
-注意！不要在父层级没有Scafford的情况使用它
 
 ```dart
 @override

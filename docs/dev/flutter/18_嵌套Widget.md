@@ -62,8 +62,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(msg: "Hello"),
-        childContent(msg: "World!"),
+        childContent(msg: "Hello"), // [!code ++]
+        childContent(msg: "World!"),  // [!code ++]
       ]
     );
   }
@@ -74,9 +74,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final String msg;
+  final String msg; // [!code ++]
 
-  const childContent({super.key, required this.msg});
+  const childContent({super.key});  // [!code --]
+  const childContent({super.key, required this.msg}); // [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -86,12 +87,57 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     // 注意调用参数时候添加widget
-    return Text(widget.msg);
+    return Text(widget.msg);  // [!code ++]
   }
 }
 ```
 
-注意，如果在子层Widget中使用`required`，那么这个参数必须要传递，如果没有携带，那么不一定需要传递
+## 携带可选参数
+
+父层Widget
+
+```dart
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        childContent(), // [!code ++]
+        childContent(msg: "World!"),  // [!code ++]
+      ]
+    );
+  }
+}
+```
+
+子层Widget
+
+```dart
+class childContent extends StatefulWidget {
+  final String msg; // [!code ++]
+
+  const childContent({super.key});  // [!code --]
+  const childContent({super.key, this.msg = "Hello"}); // [!code ++]
+
+  @override
+  State<childContent> createState() => _childContentState();
+}
+
+class _childContentState extends State<childContent> {
+  @override
+  Widget build(BuildContext context) {
+    // 默认为"Hello"
+    return Text(widget.msg);  // [!code ++]
+  }
+}
+```
 
 ## 携带回调函数
 
@@ -115,8 +161,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(functionCallBack: () => fun()),
-        childContent(functionCallBack: () => fun()),
+        childContent(functionCallBack: () => fun()),  // [!code ++]
+        childContent(functionCallBack: () => fun()),  // [!code ++]
         // 或者可以直接这样使用:
         // childContent(functionCallBack: fun),
       ]
@@ -129,9 +175,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final VoidCallback functionCallBack;
+  final VoidCallback functionCallBack;  // [!code ++]
 
-  const childContent({super.key, required this.functionCallBack});
+  const childContent({super.key});  // [!code --]
+  const childContent({super.key, required this.functionCallBack});  // [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -141,14 +188,15 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => widget.functionCallBack(),
+      onPressed: () => widget.functionCallBack(), // [!code ++]
       child: Text("按钮"),
     );
   }
 }
 ```
-
-注意，使用`VoidCallback`类型的回调函数**不能**添加任何参数
+:::warning
+使用`VoidCallback`类型的回调函数**不能**添加任何参数
+:::
 
 ## 携带有参数的回调函数
 
@@ -172,8 +220,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(functionCallBack: (val) => fun(val)),
-        childContent(functionCallBack: (val) => fun(val)),
+        childContent(functionCallBack: (val) => fun(val)),  // [!code ++]
+        childContent(functionCallBack: (val) => fun(val)),  // [!code ++]
         // 或者可以直接这样使用:
         // childContent(functionCallBack: fun),
       ]
@@ -186,9 +234,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final ValueChanged functionCallBack;
+  final ValueChanged functionCallBack;  // [!code ++]
 
-  const childContent({super.key, required this.functionCallBack});
+  const childContent({super.key});  // [!code --]
+  const childContent({super.key, required this.functionCallBack});  // [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -198,14 +247,16 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => widget.functionCallBack("Hello!"),
+      onPressed: () => widget.functionCallBack("Hello!"), // [!code ++]
       child: Text("按钮"),
     );
   }
 }
 ```
 
-注意，使用`VoidCallback`类型的回调函数只能添加**一个参数**，如果需要携带多个参数，可以将其打包成`Map`类型的参数传递：
+:::tip
+使用`VoidCallback`类型的回调函数只能添加**一个参数**，如果需要携带多个参数，可以将其打包成`Map`类型的参数传递：
+:::
 
 ```dart
 void callBackFunction(){

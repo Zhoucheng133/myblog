@@ -5,13 +5,14 @@
 ```dart
 return Container{
   // 红色
-  color: Colors.red,
+  color: Colors.red,  // [!code ++]
   // 或者自定义RGB色彩
   // color: Color.fromARGB(255, 123, 123, 123),
 };
 ```
-
-**注意不能这样使用**：
+:::warning
+注意不能这样使用
+:::
 
 ```dart
 return Container{
@@ -26,10 +27,10 @@ return Container{
 
 ```dart
 return Container{
-  decoration: BoxDecoration{
-    color: Colors.red,
-    // 其它样式
-  }
+  decoration: BoxDecoration{  // [!code ++]
+    color: Colors.red,  // [!code ++]
+    // 其它样式 // [!code ++]
+  } // [!code ++]
 };
 ```
 
@@ -80,7 +81,7 @@ return Container(
 return Container(
   decoration: BoxDecoration{
     // 圆角10
-    borderRadius: BorderRadius.circular(10),
+    borderRadius: BorderRadius.circular(10),  // [!code ++]
   }
 );
 ```
@@ -122,9 +123,9 @@ Container(
 ```dart
 return Container(
   decoration: BoxDecoration(
-    image: DecorationImage(
-      image: const AssetImage("assets/image.jpg")
-    )
+    image: DecorationImage( // [!code ++]
+      image: const AssetImage("assets/image.jpg") // [!code ++]
+    ) // [!code ++]
   )
 );
 ```
