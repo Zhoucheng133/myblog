@@ -7,14 +7,14 @@
 父层Widget
 
 ```dart
-class myApp extends StatefulWidget {
-  const myApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<myApp> createState() => _myAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _myAppState extends State<myApp> {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -50,14 +50,14 @@ class _childContentState extends State<childContent> {
 父层Widget
 
 ```dart
-class myApp extends StatefulWidget {
-  const myApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<myApp> createState() => _myAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _myAppState extends State<myApp> {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -98,14 +98,14 @@ class _childContentState extends State<childContent> {
 父层Widget
 
 ```dart
-class myApp extends StatefulWidget {
-  const myApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<myApp> createState() => _myAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _myAppState extends State<myApp> {
+class _MyAppState extends State<MyApp> {
 
   void fun(){
     print("Hello world!");
@@ -155,14 +155,14 @@ class _childContentState extends State<childContent> {
 父层Widget
 
 ```dart
-class myApp extends StatefulWidget {
-  const myApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<myApp> createState() => _myAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _myAppState extends State<myApp> {
+class _MyAppState extends State<MyApp> {
 
   void fun(val){
     print(val);
