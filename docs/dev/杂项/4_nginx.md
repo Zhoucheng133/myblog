@@ -133,7 +133,9 @@ server{
 
 ```
 
-⚠️注意：如果反向代理使用的是SpringBoot，将项目中的目录和`nginx`配置匹配：
+:::warning
+如果反向代理使用的是SpringBoot，将项目中的目录和`nginx`配置匹配：
+:::
 
 在`application.properties`文件中添加：
 
