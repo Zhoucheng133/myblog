@@ -20,7 +20,7 @@
         <td><a href="https://github.com/Zhoucheng133/netPlayer-Next">App</a></td>
         <td rowspan="2">Flutter</td>
         <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
-        <td rowspan="2">Subsonic & Navidrome based desktop music player</td>
+        <td rowspan="3">Subsonic & Navidrome based desktop music player</td>
     </tr>
     <tr>
         <td><del><a href="https://github.com/Zhoucheng133/netPlayer-mini-kit">Lyric Kit</a></del></td>
@@ -31,7 +31,6 @@
         <td>/</td>
         <td>Flutter</td>
         <td><img src="./assets/platform/m.png" width=30/></td>
-        <td>Subsonic & Navidrome based mobile music player</td>
     </tr>
     <tr>
         <td rowspan="3"><img src="./assets/sharer.png" width=50/></td>
@@ -39,7 +38,7 @@
         <td><a href="https://github.com/Zhoucheng133/Sharer-App">App</a></td>
         <td>Flutter</td>
         <td rowspan="3"><img src="./assets/platform/d.png" width=30/></td>
-        <td rowspan="3">File sharing tool based on Flutter</td>
+        <td rowspan="3">File sharing tool</td>
     </tr>
     <tr>
         <td><a href="https://github.com/Zhoucheng133/Sharer-Core">Core</a></td>
@@ -69,7 +68,7 @@
         <td>
         <img src="./assets/platform/cross.png" width=30/>
         </td>
-        <td >qBittorrent & Aria Cilent for desktop & mobile</td>
+        <td >qBittorrent & Aria Cilent</td>
     </tr>
     <tr>
         <td><img src="./assets/whisper.png" width=50/></td>
@@ -92,12 +91,24 @@
         <td>Go</td>
     </tr>
     <tr>
+        <td rowspan="2"><img src="./assets/gitpack.png" width=50/></td>
+        <td rowspan="2"><a href="https://github.com/Zhoucheng133/GitPack">GitPack</a></td>
+        <td><a href="https://github.com/Zhoucheng133/GitPack">App</a></td>
+        <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
+        <td rowspan="2">Pack git repo without ignores</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Zhoucheng133/GitPack-Core">Core</a></td>
+        <td>Go</td>
+    </tr>
+    <tr>
         <td rowspan="2"><img src="./assets/exif.png" width=50/></td>
         <td rowspan="2"><a href="https://github.com/Zhoucheng133/EXIF-Helper">EXIF Helper</a></td>
         <td><a href="https://github.com/Zhoucheng133/EXIF-Helper">App</a></td>
         <td>Flutter</td>
         <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
-        <td rowspan="2">Add EXIF ​​watermark tool</td>
+        <td rowspan="2">EXIF ​​watermark adding tool</td>
     </tr>
     <tr>
         <td><a href="https://github.com/Zhoucheng133/EXIF-Helper-Core">Core</a></td>
