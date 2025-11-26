@@ -70,6 +70,7 @@ export default defineConfig({
               { text: '水波纹效果', link: '/dev/flutter/27_水波纹效果' },
               { text: '连接到动态库', link: '/dev/flutter/28_连接到动态库' },
               { text: '暗色模式', link: '/dev/flutter/29_暗色模式' },
+              { text: '按钮', link: '/dev/flutter/30_按钮' },
             ],
           },
           {

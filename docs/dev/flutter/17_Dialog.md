@@ -127,3 +127,23 @@ void initState(){
   });
 }
 ```
+
+## 禁用点击空白处关闭
+
+```dart
+showDialog(
+  context: context,
+  barrierDismissible: false, 
+  builder: (context) => AlertDialog(
+    title: Text('提示'),
+    content: Text('这是一个不可取消的对话框'),
+    actions: [
+      TextButton(
+        child: Text('确定'),
+        onPressed: () => Navigator.of(context).pop(),
+      ),
+    ],
+  ),
+);
+
+```
