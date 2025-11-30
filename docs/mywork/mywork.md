@@ -288,7 +288,7 @@
     <tr>
         <td><a href="https://github.com/Zhoucheng133/Aria-Linker">Aria Linker</a></td>
         <td>JavaScript</td>
-        <td>Tampermonkey script that task to aria</td>
+        <td>Tampermonkey script that add task to aria</td>
     </tr>
     <tr>
         <td><a href="https://github.com/Zhoucheng133/qBit-Linker">qBit Linker</a></td>
