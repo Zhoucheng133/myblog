@@ -303,7 +303,7 @@
     <tr>
         <td><a href="https://github.com/Zhoucheng133/DAV-with-Docker">DAV with Docker </a></td>
         <td>DAV with Docker</td>
-        <td>Use WebDAV on Docker</td>
+        <td>Deploy WebDAV server with Docker</td>
     </tr>
 </tbody>
 </table>
