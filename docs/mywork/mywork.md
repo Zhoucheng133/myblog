@@ -71,6 +71,18 @@
         <td >qBittorrent & Aria Cilent</td>
     </tr>
     <tr>
+        <td rowspan="2"><img src="./assets/server_express.png" width=50/></td>
+        <td rowspan="2"><a href="https://github.com/Zhoucheng133/Server-Express">Server Express</a></td>
+        <td><a href="https://github.com/Zhoucheng133/Server-Express">App</a></td>
+        <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
+        <td rowspan="2">SFTP Client</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Zhoucheng133/Server-Express-Core">Core</a></td>
+        <td>Rust</td>
+    </tr>
+    <tr>
         <td><img src="./assets/whisper.png" width=50/></td>
         <td><a href="https://github.com/Zhoucheng133/Whisper-GUI">Whisper GUI</a></td>
         <td>/</td>
