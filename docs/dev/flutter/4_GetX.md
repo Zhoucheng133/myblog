@@ -308,11 +308,12 @@ return GetMaterialApp(
     GlobalWidgetsLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate
   ],
-  locale: const Locale('zh', 'CN'),   // 默认语言 // [!code ++]
+  locale: Get.deviceLocale            // 默认语言(这里使用的系统语言) // [!code ++]
   supportedLocales: const [
     Locale('en', 'US'),
     Locale('zh', 'CN'),
   ],
+  fallbackLocale: Locale('en', 'US'), // 没有匹配支持语言的回退语言 // [!code ++]
 )
 ```
 
@@ -330,3 +331,88 @@ return Text(
 var locale=Locale('en', 'US');
 Get.updateLocale(locale);
 ```
+
+### 如果需要添加切换语言的功能
+
+```dart
+// 自定义的语言类
+class LanguageType{
+  String name;    // 语言名称
+  Locale locale;  // 语言
+
+  LanguageType(this.name, this.locale);
+}
+
+// 语言列表
+List<LanguageType> get supportedLocales => [
+  LanguageType("English", Locale("en", "US")),
+  LanguageType("简体中文", Locale("zh", "CN")),
+  LanguageType("繁體中文", Locale("zh", "TW")),
+];
+
+class Controller extends GetxController{
+  // 当前语言
+  Rx<LanguageType> lang=Rx(supportedLocales[0]);
+
+  late SharedPreferences prefs;
+
+  // 初始化语言
+  Future<void> init() async {
+    prefs=await SharedPreferences.getInstance();
+
+    int? langIndex=prefs.getInt("langIndex");
+
+    if(langIndex==null){
+      final deviceLocale=PlatformDispatcher.instance.locale;  // 获取设备语言
+      final local=Locale(deviceLocale.languageCode, deviceLocale.countryCode);
+      int index=supportedLocales.indexWhere((element) => element.locale==local);
+      if(index!=-1){
+        lang.value=supportedLocales[index];
+        lang.refresh();
+      }
+    }else{
+      lang.value=supportedLocales[langIndex];
+    }
+  }
+
+  // 切换语言
+  void changeLanguage(int index){
+    lang.value=supportedLocales[index];
+    prefs.setInt("langIndex", index);
+    lang.refresh();
+    Get.updateLocale(lang.value.locale);
+  }
+}
+
+```
+
+在主函数中初始化
+
+```dart
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final controller=Get.put(Controller()); // [!code ++]
+  await controller.init();                // [!code ++]
+  // ...其它
+}
+```
+
+在`GetMaterialApp`中添加
+
+```dart
+return Obx(()=>
+  GetMaterialApp(
+    translations: MainTranslations(),     // [!code ++]
+    locale: controller.lang.value.locale, // [!code ++]
+    debugShowCheckedModeBanner: false,
+    localizationsDelegates: [
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate
+    ],
+    supportedLocales: supportedLocales.map((item)=>item.locale).toList(), // [!code ++]
+    fallbackLocale: Locale('en', 'US'), // [!code ++]
+    // 其它内容
+  )
+);
+````
