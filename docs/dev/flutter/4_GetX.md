@@ -267,6 +267,9 @@ Get.to(()=>newPage());
 
 ## 多语言
 
+> [!IMPORTANT]
+> 你需要先前往[本地化](15_本地化)文章中设置本地化
+
 首先需要创建语言的`Map`，例如这样
 ```dart
 // lang/zh_cn.dart
