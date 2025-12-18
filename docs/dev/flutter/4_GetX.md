@@ -24,8 +24,8 @@ flutter pub add get
 import 'package:get/get.dart';
 class Controller extends GetxController{
   // 注意在变量的最后添加".obs"用于实时检测变量变化
-  RxString paraX="Hello world!".obs; // [!code ++]
-  RxList list=<String>[].obs; // [!code ++]
+  RxString paraX="Hello world!".obs;// [!code ++]
+  RxList list=<String>[].obs;// [!code ++]
 }
 ```
 
@@ -46,17 +46,17 @@ import 'package:para.dart'
 // 可以使用StatefulWidget
 class MyApp extends StatefulWidget{
   // 获取变量
-  final Controller c = Get.put(Controller()); // [!code ++]
+  final Controller c = Get.put(Controller());// [!code ++]
   // 你可以给这个实例化的Controller添加一个Tag，有什么用后面有讲到
   // final Controller c=Get.put(Controller(), tag="initVal");
   @override
   Widget build(BuildContext context){
     return Center(
-      child: Obx(()=>{  // [!code ++]
-        Text( // [!code ++]
-          c.paraX.value // [!code ++]
-        ) // [!code ++]
-      })  // [!code ++]
+      child: Obx(()=>{// [!code ++]
+        Text(// [!code ++]
+          c.paraX.value// [!code ++]
+        )// [!code ++]
+      })// [!code ++]
     )
   }
 }
@@ -71,13 +71,13 @@ import 'package:para.dart'
 // 可以使用StatefulWidget
 class MyApp extends StatefulWidget{
   // 获取变量
-  final Controller c = Get.put(Controller()); // [!code ++]
+  final Controller c = Get.put(Controller());// [!code ++]
   @override
   Widget build(BuildContext context){
-    return ListView.builder(  // [!code ++]
-      itemCount: c.list.length, // [!code ++]
-      itemBuilder: (BuildContext context, int index) => Text(c.list[index]) // [!code ++]
-    ) // [!code ++]
+    return ListView.builder(// [!code ++]
+      itemCount: c.list.length,// [!code ++]
+      itemBuilder: (BuildContext context, int index) => Text(c.list[index])// [!code ++]
+    )// [!code ++]
   }
 }
 ```
@@ -103,7 +103,7 @@ class MyApp extends StatefulWidget{
       child: TextButton(
         onPressed: (){
           // 直接赋值更新变量
-          c.paraX.value="Hello, Flutter!" // [!code ++]
+          c.paraX.value="Hello, Flutter!"// [!code ++]
         },
         child: Text("按钮")
       )
@@ -125,10 +125,10 @@ class MyApp extends StatefulWidget{
       child: TextButton(
         onPressed: (){
           // 不需要使用.value
-          c.list[1]="hello";  // [!code ++]
-          c.list[2]="world!"; // [!code ++]
+          c.list[1]="hello";// [!code ++]
+          c.list[2]="world!";// [!code ++]
           // 需要在之后刷新这个变量
-          c.list.refresh(); // [!code ++]
+          c.list.refresh();// [!code ++]
         },
         child: Text("按钮")
       )
@@ -159,9 +159,9 @@ class MyApp extends StatefulWidget{
   void initState() {
     super.initState();
     // ever([arg],(callback){})
-    ever(c.paraX, (callback) {  // [!code ++]
-      // 如果发生了更新，会执行这里的函数 // [!code ++]
-    }); // [!code ++]
+    ever(c.paraX, (callback) {// [!code ++]
+      // 如果发生了更新，会执行这里的函数 //[!code ++]
+    });// [!code ++]
   }
 
   @override
@@ -196,7 +196,7 @@ class MyApp extends StatefulWidget{
   void dispose() {
     super.dispose();
     // 注意销毁监听
-    listener.dispose(); // [!code ++]
+    listener.dispose();// [!code ++]
   }
 
   @override
@@ -225,7 +225,7 @@ class Controller extends GetxController{
 // A Widget
 class A extends StatefulWidget{
   // 如果只调用一次，可以忽略tag属性，这个属性用于防止调用多次导致无法区分
-  final Controller c = Get.put(Controller(), tag="controller"); // [!code ++]
+  final Controller c = Get.put(Controller(), tag="controller");// [!code ++]
   return // ...其他内容
 }
 
@@ -236,7 +236,7 @@ class B extends StatefulWidget{
       // 注意，可能会遇到找不到的情况（如果有），因此使用try-catch
       try{
         // 如果只调用一次，可以忽略tag属性，同上
-        final Controller c = Get.find(tag="controller");  // [!code ++]
+        final Controller c = Get.find(tag="controller");// [!code ++]
         c.printHello();
       }catch(_){}
     },
@@ -302,18 +302,21 @@ class MainTranslations extends Translations {
 
 ```dart
 return GetMaterialApp(
-  translations: MainTranslations(),   // 在这里调用 // [!code ++]
+  // 在这里调用
+  translations: MainTranslations(),// [!code ++]
   localizationsDelegates: const [
     GlobalMaterialLocalizations.delegate,
     GlobalWidgetsLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate
   ],
-  locale: Get.deviceLocale            // 默认语言(这里使用的系统语言) // [!code ++]
+  // 默认语言(这里使用的系统语言)
+  locale: Get.deviceLocale// [!code ++]
   supportedLocales: const [
     Locale('en', 'US'),
     Locale('zh', 'CN'),
   ],
-  fallbackLocale: Locale('en', 'US'), // 没有匹配支持语言的回退语言 // [!code ++]
+  // 没有匹配支持语言的回退语言
+  fallbackLocale: Locale('en', 'US'),// [!code ++]
 )
 ```
 
@@ -391,8 +394,8 @@ class Controller extends GetxController{
 ```dart
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final controller=Get.put(Controller()); // [!code ++]
-  await controller.init();                // [!code ++]
+  final controller=Get.put(Controller());// [!code ++]
+  await controller.init();// [!code ++]
   // ...其它
 }
 ```
@@ -402,16 +405,16 @@ Future<void> main() async {
 ```dart
 return Obx(()=>
   GetMaterialApp(
-    translations: MainTranslations(),     // [!code ++]
-    locale: controller.lang.value.locale, // [!code ++]
+    translations: MainTranslations(),// [!code ++]
+    locale: controller.lang.value.locale,// [!code ++]
     debugShowCheckedModeBanner: false,
     localizationsDelegates: [
       GlobalMaterialLocalizations.delegate,
       GlobalWidgetsLocalizations.delegate,
       GlobalCupertinoLocalizations.delegate
     ],
-    supportedLocales: supportedLocales.map((item)=>item.locale).toList(), // [!code ++]
-    fallbackLocale: Locale('en', 'US'), // [!code ++]
+    supportedLocales: supportedLocales.map((item)=>item.locale).toList(),// [!code ++]
+    fallbackLocale: Locale('en', 'US'),// [!code ++]
     // 其它内容
   )
 );
