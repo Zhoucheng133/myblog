@@ -60,7 +60,7 @@ return Container(
   child: TextField(
     controller: inputController,
     style: TextStyle(
-      fontSize: 14, // [!code ++]
+      fontSize: 14,// [!code ++]
     )
   )
 )
@@ -94,8 +94,8 @@ TextField(
 ```dart
 TextField(
   controller: key,
-  autocorrect: false, // [!code ++]
-  enableSuggestions: false, // [!code ++]
+  autocorrect: false,// [!code ++]
+  enableSuggestions: false,// [!code ++]
 ),
 ```
 
@@ -117,7 +117,7 @@ TextField(
 ```dart
 TextField(
   controller: key,
-  obscureText: true;  // [!code ++]
+  obscureText: true;// [!code ++]
 ),
 ```
 
@@ -132,9 +132,9 @@ TextField(
 ```dart
 TextField(
   controller: key,
-  inputFormatters: [  // [!code ++]
-    FilteringTextInputFormatter.digitsOnly, // [!code ++]
-  ],  // [!code ++]
+  inputFormatters: [// [!code ++]
+    FilteringTextInputFormatter.digitsOnly,// [!code ++]
+  ],// [!code ++]
 )
 ```
 
@@ -145,7 +145,7 @@ TextField(
   // 如果需要小数点：
   // keyboardType: TextInputType.numberWithOptions(decimal: true),
   // 如果不需要：
-  keyboardType: TextInputType.number, // [!code ++]
+  keyboardType: TextInputType.number,// [!code ++]
   controller: key,
   inputFormatters: [
     FilteringTextInputFormatter.digitsOnly,

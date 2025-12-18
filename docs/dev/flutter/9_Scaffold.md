@@ -91,7 +91,7 @@ return Scaffold(
 ```dart
 return Scaffold(
   // 添加下面这行表示不希望受到软键盘的影响
-  resizeToAvoidBottomInset: false,  // [!code ++]
+  resizeToAvoidBottomInset: false,// [!code ++]
   // ...
 );
 ```
@@ -103,7 +103,7 @@ return Scaffold(
 ```dart
 return Scaffold(
   appBar: AppBar(
-    scrolledUnderElevation: 0.0,  // [!code ++]
+    scrolledUnderElevation: 0.0,// [!code ++]
     // ...
   ),
 );

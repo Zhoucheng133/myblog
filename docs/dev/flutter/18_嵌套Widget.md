@@ -62,8 +62,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(msg: "Hello"), // [!code ++]
-        childContent(msg: "World!"),  // [!code ++]
+        childContent(msg: "Hello"),// [!code ++]
+        childContent(msg: "World!"),// [!code ++]
       ]
     );
   }
@@ -74,10 +74,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final String msg; // [!code ++]
+  final String msg;// [!code ++]
 
   const childContent({super.key});  // [!code --]
-  const childContent({super.key, required this.msg}); // [!code ++]
+  const childContent({super.key, required this.msg});// [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -87,7 +87,7 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     // 注意调用参数时候添加widget
-    return Text(widget.msg);  // [!code ++]
+    return Text(widget.msg);// [!code ++]
   }
 }
 ```
@@ -109,8 +109,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(), // [!code ++]
-        childContent(msg: "World!"),  // [!code ++]
+        childContent(),// [!code ++]
+        childContent(msg: "World!"),// [!code ++]
       ]
     );
   }
@@ -121,10 +121,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final String msg; // [!code ++]
+  final String msg;// [!code ++]
 
   const childContent({super.key});  // [!code --]
-  const childContent({super.key, this.msg = "Hello"}); // [!code ++]
+  const childContent({super.key, this.msg = "Hello"});// [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -134,7 +134,7 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     // 默认为"Hello"
-    return Text(widget.msg);  // [!code ++]
+    return Text(widget.msg);// [!code ++]
   }
 }
 ```
@@ -161,8 +161,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(functionCallBack: () => fun()),  // [!code ++]
-        childContent(functionCallBack: () => fun()),  // [!code ++]
+        childContent(functionCallBack: () => fun()),// [!code ++]
+        childContent(functionCallBack: () => fun()),// [!code ++]
         // 或者可以直接这样使用:
         // childContent(functionCallBack: fun),
       ]
@@ -175,10 +175,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final VoidCallback functionCallBack;  // [!code ++]
+  final VoidCallback functionCallBack;// [!code ++]
 
   const childContent({super.key});  // [!code --]
-  const childContent({super.key, required this.functionCallBack});  // [!code ++]
+  const childContent({super.key, required this.functionCallBack});// [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -188,7 +188,7 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => widget.functionCallBack(), // [!code ++]
+      onPressed: () => widget.functionCallBack(),// [!code ++]
       child: Text("按钮"),
     );
   }
@@ -220,8 +220,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        childContent(functionCallBack: (val) => fun(val)),  // [!code ++]
-        childContent(functionCallBack: (val) => fun(val)),  // [!code ++]
+        childContent(functionCallBack: (val) => fun(val)),// [!code ++]
+        childContent(functionCallBack: (val) => fun(val)),// [!code ++]
         // 或者可以直接这样使用:
         // childContent(functionCallBack: fun),
       ]
@@ -234,10 +234,10 @@ class _MyAppState extends State<MyApp> {
 
 ```dart
 class childContent extends StatefulWidget {
-  final ValueChanged functionCallBack;  // [!code ++]
+  final ValueChanged functionCallBack;// [!code ++]
 
   const childContent({super.key});  // [!code --]
-  const childContent({super.key, required this.functionCallBack});  // [!code ++]
+  const childContent({super.key, required this.functionCallBack});// [!code ++]
 
   @override
   State<childContent> createState() => _childContentState();
@@ -247,7 +247,7 @@ class _childContentState extends State<childContent> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => widget.functionCallBack("Hello!"), // [!code ++]
+      onPressed: () => widget.functionCallBack("Hello!"),// [!code ++]
       child: Text("按钮"),
     );
   }
