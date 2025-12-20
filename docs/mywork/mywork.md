@@ -83,6 +83,18 @@
         <td>Rust</td>
     </tr>
     <tr>
+        <td rowspan="2"><img src="./assets/gamma.png" width=50/></td>
+        <td rowspan="2"><a href="https://github.com/Zhoucheng133/Gamma-Setter">Gamma Setter</a></td>
+        <td><a href="https://github.com/Zhoucheng133/Gamma-Setter">App</a></td>
+        <td>Flutter</td>
+        <td rowspan="2"><img src="./assets/platform/d.png" width=30/></td>
+        <td rowspan="2">Adjust monitor's gamma tool</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/Zhoucheng133/Gamma-Setter-Core">Core</a></td>
+        <td>Rust</td>
+    </tr>
+    <tr>
         <td><img src="./assets/whisper.png" width=50/></td>
         <td><a href="https://github.com/Zhoucheng133/Whisper-GUI">Whisper GUI</a></td>
         <td>/</td>
