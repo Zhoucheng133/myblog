@@ -95,6 +95,14 @@
         <td>Rust</td>
     </tr>
     <tr>
+        <td><img src="./assets/oneloop.png" width=50/></td>
+        <td><a href="https://github.com/Zhoucheng133/One-Loop">One Loop</a></td>
+        <td>/</td>
+        <td>Flutter</td>
+        <td><img src="./assets/platform/m.png" width=30/></td>
+        <td >Loop an audio for mobile</td>
+    </tr>
+    <tr>
         <td><img src="./assets/whisper.png" width=50/></td>
         <td><a href="https://github.com/Zhoucheng133/Whisper-GUI">Whisper GUI</a></td>
         <td>/</td>
