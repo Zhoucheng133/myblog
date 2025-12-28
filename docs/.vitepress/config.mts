@@ -41,6 +41,7 @@ export default defineConfig({
             text: 'Flutter', 
             collapsed: true,
             items: [
+              { text: 'Material模板', link: '/dev/flutter/0_模板' },
               { text: '保存设置', link: '/dev/flutter/1_保存设置' },
               { text: 'GestureDetector', link: '/dev/flutter/2_GestureDetector' },
               { text: '网络请求', link: '/dev/flutter/3_网络请求' },
