@@ -103,6 +103,14 @@
         <td >Loop an audio for mobile</td>
     </tr>
     <tr>
+        <td><img src="./assets/deface.png" width=50/></td>
+        <td><a href="https://github.com/Zhoucheng133/Deface-GUI">Deface GUI</a></td>
+        <td>/</td>
+        <td>Tauri</td>
+        <td><img src="./assets/platform/d.png" width=30/></td>
+        <td >Deface GUI helper</td>
+    </tr>
+    <tr>
         <td><img src="./assets/whisper.png" width=50/></td>
         <td><a href="https://github.com/Zhoucheng133/Whisper-GUI">Whisper GUI</a></td>
         <td>/</td>
