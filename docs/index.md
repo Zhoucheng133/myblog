@@ -16,7 +16,7 @@ hero:
       link: /media/index
     - theme: alt
       text: 我的作品
-      link: /mywork/mywork
+      link: /myprj/myprj
 ---
 
 ::: tip 提示
