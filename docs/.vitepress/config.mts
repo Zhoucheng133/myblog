@@ -12,7 +12,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '我的作品', link: '/mywork/mywork' }
+      { text: '我的作品', link: '/myprj/myprj' }
     ],
 
     darkModeSwitchLabel: "切换主题",
@@ -31,7 +31,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '我的作品',
-        link: '/mywork/mywork',
+        link: '/myprj/myprj',
       },
       {
         text: '开发文档',
